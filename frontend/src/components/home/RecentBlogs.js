@@ -1,4 +1,4 @@
-const Recent_blogs = () => {
+function RecentBlogs() {
     return (
         <div>
             <h3>Recent Blogs</h3>
@@ -6,4 +6,4 @@ const Recent_blogs = () => {
     )
 }
 
-export default Recent_blogs
+export default RecentBlogs
