@@ -12,3 +12,48 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+  color: aliceblue;
+}
+.navbar div {
+  color: #000000;
+}
+.navbar .links {
+  margin-left: auto;
+  text-decoration: none;
+}
+.navbar a {
+  color: #2c0841;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 35px;
+  padding: 20px;
+}
+.navbar a:hover {
+  color: #6d1650;
+}
+.head {
+  color: #121212;
+  font-size: 40px;
+  font-family: cursive;
+  padding: 10px;
+  text-align: start;
+}
+.search {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+#textbox {
+  height: 50px;
+  width: 400px;
+  font-size: 18pt;
+  padding: 0 10px 0 10px;
+}
