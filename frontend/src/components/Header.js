@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import Home from './home/Home';
 import Blog from './blog/Blog';
 import Location from './locations/Location';
@@ -6,7 +6,7 @@ import Map from './map/Map';
 
 const Header = () => {
     return (
-        <BrowserRouter>
+        <Router>
             <div>
                 <nav>
                     <Link to='/'>
@@ -33,7 +33,7 @@ const Header = () => {
                     <Route path='/maps' component={Map} />
                 </Switch>
             </div>
-        </BrowserRouter>
+        </Router>
     )
 }
 
