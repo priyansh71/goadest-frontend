@@ -1,4 +1,4 @@
-import Recent_blogs from './Recent_blogs';
+import RecentBlogs from './RecentBlogs';
 import Search from './Search';
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <h2>Home Page</h2>
             <Search />
-            <Recent_blogs />
+            <RecentBlogs />
         </div>
     )
 }
