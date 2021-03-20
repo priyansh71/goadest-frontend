@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
-import {useRouteMatch} from 'react-router-dom';
 
 const Search = () => {
 
     const [value, setValue] = useState('');
-    const {url} = useRouteMatch();
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Submitting: ${value}${url}`)
-    }
-
-    if(url === '/') {
-        return null;
+        alert(`Submitting: ${value}`)
     }
 
     return (
