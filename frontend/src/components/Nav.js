@@ -8,10 +8,6 @@ const Nav = () => {
     return (
         <div>
             <nav>
-                <Link to='/'>
-                    Home
-                </Link>
-
                 <ul>
                     <Link to='/blogs'>
                         <li>Blogs</li>
@@ -25,7 +21,6 @@ const Nav = () => {
                 </ul>
             </nav>
             <Switch>
-                <Route path='/' exact component={Home} />
                 <Route path='/blogs' component={Blog} />
                 <Route path='/locations' component={Location} />
                 <Route path='/maps' component={Map} />

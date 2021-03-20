@@ -1,5 +1,5 @@
 import RecentBlogs from './RecentBlogs';
-import Search from './Search';
+import Search from '../Search';
 
 const Home = () => {
     return (
