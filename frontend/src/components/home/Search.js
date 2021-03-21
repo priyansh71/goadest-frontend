@@ -16,6 +16,21 @@ const Search = () => {
         </form>
     )
 
+    handleSubmit(event) {
+        event.preventDefault();
+        // Send the data to Backend
+    }
+
+    render() {
+        return (
+            <div className="search">
+                <form onSubmit={this.handleSubmit}>
+                    <input id="textbox" type='text' value={this.state.value} onChange={this.handleChange} />
+                    <input type='submit' value='Search' />
+                </form>
+            </div>
+        );
+    }
 }
 
 export default Search;
