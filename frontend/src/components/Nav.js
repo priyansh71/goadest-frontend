@@ -1,5 +1,4 @@
 import {Route, Link, Switch} from "react-router-dom";
-import Home from './home/Home';
 import Blog from './blog/Blog';
 import Location from './locations/Location';
 import Map from './map/Map';
