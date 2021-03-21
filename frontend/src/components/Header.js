@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './home/Home';
 import Blog from './blog/Blog';
 import Location from './locations/Location';
