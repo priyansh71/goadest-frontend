@@ -18,7 +18,7 @@ const Search = () => {
     return (
         <form onSubmit={handleSubmit}>
             <input type='text' value={value} onChange={(e) => setValue(e.target.value)}/>
-        <input type='submit' value='Submit' />
+            <input type='submit' value='Submit' />
         </form>
     )
 
