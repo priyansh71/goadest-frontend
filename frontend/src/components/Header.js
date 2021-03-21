@@ -1,39 +1,24 @@
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 import Home from './home/Home';
-import Blog from './blog/Blog';
-import Location from './locations/Location';
-import Map from './map/Map';
+import Nav from './Nav';
+import Search from './Search';
 
 const Header = () => {
     return (
-        <BrowserRouter>
-            <div>
-                <nav>
+        <Router>
+            <Switch>
+                <Route path="*">
                     <Link to='/'>
                         Home
                     </Link>
-
-                    <ul>
-                        <Link to='/blogs'>
-                            <li>Blogs</li>
-                        </Link>
-                        <Link to='/locations'>
-                            <li>Locations</li>
-                        </Link>
-                        <Link to='/maps'>
-                            <li>Maps</li>
-                        </Link>
-                    </ul>
-                </nav>
-
-                <Switch>
-                    <Route path='/' exact component={Home} />
-                    <Route path='/blogs' component={Blog} />
-                    <Route path='/locations' component={Location} />
-                    <Route path='/maps' component={Map} />
-                </Switch>
-            </div>
-        </BrowserRouter>
+                    <Search />
+                    <Nav />
+                    <Route path='/' exact>
+                        <Home />
+                    </Route>
+                </Route>
+            </Switch>
+        </Router>
     )
 }
 

@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class Search extends React.Component {
+const Search = () => {
 
-    constructor(props) {
-        super(props);
-        this.state = {value: ''};
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+    const [value, setValue] = useState('');
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(`Submitting: ${value}`)
     }
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
-    }
+    return (
+        <form onSubmit={handleSubmit}>
+            <input type='text' value={value} onChange={(e) => setValue(e.target.value)}/>
+        <input type='submit' value='Submit' />
+        </form>
+    )
 
     handleSubmit(event) {
         event.preventDefault();
