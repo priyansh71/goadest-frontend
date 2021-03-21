@@ -83,6 +83,7 @@
 #r5:checked ~ .first {
   margin-left: -80%;
 }
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -126,4 +127,28 @@
   width: 400px;
   font-size: 18pt;
   padding: 0 10px 0 10px;
+}
+.body2 {
+  margin: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background: #adacac;
+  padding: 40px;
+}
+.jumbotron.jumbotron-inner {
+  width: 70%;
+}
+.jumbotron.jumbotron-inner h2 {
+  font-size: 23px;
+  font-weight: 700;
+}
+.jumbotron.jumbotron-inner p {
+  font-size: 23px;
+  font-weight: 500;
 }

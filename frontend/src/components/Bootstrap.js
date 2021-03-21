@@ -1,5 +1,3 @@
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import a from './alpha.jpg';
 import b from './beta.jpg';
 import c from './c.jpg';
