@@ -9,7 +9,6 @@ const Home = () => {
             <h2>Home Page</h2>
             <Search />
             <Bootstrap />
-            <Jumbotron />
             <RecentBlogs />
         </div>
     )

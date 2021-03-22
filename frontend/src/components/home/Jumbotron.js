@@ -1,22 +1,41 @@
+import React from 'react'
+import { useMediaQuery } from 'react-responsive'
+ 
 const Jumbotron = () => {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 800px)'
+    })
+    const isTabletOrMobileDevice = useMediaQuery({
+        query: '(max-device-width: 800px)'
+    })
+ 
     return (
-    <div className="body2" >    
-        <div className="jumbotron" >
-            <div className="jumbotron-inner">
-                <h2>LOREM</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla quam, ultricies vitae l
-                    igula ac, vehicula imperdiet metus. Integer tempus quam et malesuada luctus. Vivamus tincidun
-                    t elit in nibh vestibulum, eu convallis arcu tincidunt. Sed tempus pretium quam vitae accum
-                    san. Class aptent taciti sociosqu ad litora torquent per conubia nostra, pe
-                    r inceptos himenaeos. Praesent nec dui interdum, ornare tortor vel, dignissim torto
-                    r. Donec eget ligula nec tortor sagittis congue. Suspendisse potenti. Integer dui
-                     augue, laoreet eget mollis et, vestibulum a arcuetus non, hendrerit massa. Duis metu
-
-                </p>
-            </div>
-        </div>    
-    </div>
+        <div>
+        { isTabletOrMobileDevice && <>
+            <div>
+                <div className="feature">Goa.The word is enough.</div>
+            </div>    
+          </>}
+        
+            { isDesktopOrLaptop && <>
+                <div className="body2" >
+                    <div className="jumbotron" >
+                        <div className="jumbotron-inner">
+                            <h2>Let's plan your dream holiday destination!</h2>
+                            <p>
+                                Famed to be a paradise on earth, Goa has the right mix of everything that a tourist destination has to offer.
+                                It is an ideal for tourist activities. It is beautiful because of its unbeatable greenery oozing out of
+                                the dense palm cover even at the most popular stretches of beaches.
+                                The glimpse of peaceful life of the fisherman villages,The exciting water sports activities such as scuba diving and snorkelling, boat rides, water skiing for nimble footed ones, boating, cruising, surfing,
+                                parasailing and jet skiing options would satisfy every adventure lover’s heart.
+                   </p>
+                        </div>
+                    </div>
+                </div>
+            </>
+            }
+            
+              </div>
 
     )
 }
