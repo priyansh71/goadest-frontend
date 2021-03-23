@@ -1,5 +1,6 @@
 const BlogViewer = () => {
     //const {url} = useRouteMatch();
+    
     const blog = {title: "Blog-1", content: 'This is a blog'}; //fetch(url) from backend
     return (
         <div>
