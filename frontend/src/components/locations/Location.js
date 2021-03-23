@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';
@@ -14,7 +14,17 @@ const Location = (seacrchValue) => {
         setOption(e.target.id);
     }
 
-    // I have radius, option and searchValue. Need to send these to backend
+    /*useEffect(() => {
+        // I have radius, option and searchValue. Need to send these to backend
+        // send(searchValue,radius,option)
+        const recieve = '';// = recieve(from backend)
+        const locations = JSON.parse(recieve);
+
+
+    });*/
+
+
+
 
     return (
         <div>

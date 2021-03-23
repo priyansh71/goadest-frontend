@@ -5,7 +5,7 @@ const Search = ({value, onChange}) => {
 
     const {url} = useRouteMatch();
 
-    if(url === '/') {
+    if(url === '/' || url === '/blogs') {
         return null;
     }
 
