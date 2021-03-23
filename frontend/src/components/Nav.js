@@ -3,7 +3,7 @@ import Blog from './blog/Blog';
 import Location from './locations/Location';
 import Map from './map/Map';
 
-const Nav = () => {
+const Nav = (value) => {
     return (
         <div>
             <nav>
@@ -21,7 +21,7 @@ const Nav = () => {
             </nav>
             <Switch>
                 <Route path='/blogs' component={Blog} />
-                <Route path='/locations' component={Location} />
+                <Route path='/locations' component={() => <Location searchValue={value}/>} />
                 <Route path='/maps' component={Map} />
             </Switch>
         </div>

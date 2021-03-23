@@ -3,7 +3,7 @@ import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';
 
-const Location = () => {
+const Location = (seacrchValue) => {
 
     const [radius, setRadius] = useState(0);
     const [option, setOption] = useState('all')
@@ -14,6 +14,7 @@ const Location = () => {
         setOption(e.target.id);
     }
 
+    // I have radius, option and searchValue. Need to send these to backend
 
     return (
         <div>
