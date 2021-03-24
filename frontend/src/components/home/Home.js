@@ -1,12 +1,16 @@
 import Bootstrap from './Bootstrap';
 import RecentBlogs from './RecentBlogs';
 import Search from './Search';
+import { Container, Row } from 'react-bootstrap'
 
 const Home = () => {
     return (
         <div>
-            <h2>Home Page</h2>
-            <Search />
+            <Container fluid>
+                <Row>
+                    <Search />
+                </Row>
+            </Container>
             <Bootstrap />
             <RecentBlogs />
         </div>
