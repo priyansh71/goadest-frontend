@@ -1,17 +1,9 @@
-import { useRouteMatch } from 'react-router-dom';
-
 const Search = ({value, onChange}) => {
-
-
-    const { url } = useRouteMatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Submitting: ${value}${url}`)
-    }
-
-    if (url === '/') {
-        return null;
+        alert(`Submitting: ${value}`)
+        // Probably not needed. Will need to check performance and decide accordingly
     }
 
     return (

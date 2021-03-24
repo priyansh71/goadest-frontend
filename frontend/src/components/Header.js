@@ -3,7 +3,6 @@ import { Navbar, Nav } from 'react-bootstrap'
 import { Link, Route, Switch } from "react-router-dom"
 import Location from './locations/Location'
 import Home from './home/Home'
-import Map from './map/Map'
 import Blog from './blog/Blog'
 const Header = () => {
   return (
@@ -21,9 +20,6 @@ const Header = () => {
             <Link to="/locations">
               <Nav.Link as={Link} to='/locations'>Locations</Nav.Link>
             </Link>
-            <Link to="/maps">
-              <Nav.Link as={Link} to='/maps'>Maps</Nav.Link>
-            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -32,7 +28,6 @@ const Header = () => {
         <Route path='/blogs' component={Blog} />
         <Route path='/' exact component={Home} />
         <Route path='/locations' component={Location} />
-        <Route path='/maps' component={Map} />
 
       </Switch>
     </div>

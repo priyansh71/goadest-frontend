@@ -9,6 +9,7 @@ const BlogCreator = () => {
         e.preventDefault();
         const blog = { title: title, content: content };
         console.log(blog);
+        // Send the object 'blog' to backend
     }
     return (
         <div>
