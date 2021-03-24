@@ -19,17 +19,27 @@ const Location = (seacrchValue) => {
         // send(searchValue,radius,option)
         const recieve = '';// = recieve(from backend)
         const locations = JSON.parse(recieve);
+        alert(`HELLO`);
 
 
     });*/
 
-
+    const locations = [
+        {
+            key: 1,
+            address: 'abc',
+            description: 'abcdefgh',
+            typeofplace: 'beach',
+            latitude: 1,
+            longitude: 1
+        },
+    ]
 
 
     return (
         <div>
             <h2>Location Page</h2>
-            <MainSection />
+            <MainSection locations={locations}/>
             <div>
                 <RadiusFilter onChange={handleChange_radius} radius={radius}/>
                 <OptionFilter onChange={handleChange_option} option={option} />
