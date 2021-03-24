@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-function BlogBox({title, address}) {
+function BlogBox({ title, address }) {
     // This is a button
     return (
         <div>
-            <Link to={'/blogs/readblogs/'+address}>
+            <Link to={'/blogs/readblogs/' + address}>
                 {title}
             </Link>
         </div>
