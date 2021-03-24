@@ -1,10 +1,13 @@
-const Map = () => {
+const Map = ({latitude, longitude}) => {
+    
     return (
         <div>
-            <h2>Maps Page</h2>
-            <iframe title='BITS Goa' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3846.729603898282!2d73.87597291479901!3d15.39112358930294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1616137666477!5m2!1sen!2sin">
-
+            <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" 
+                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20BITS%20goa+(BITS)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            >
             </iframe>
+            <a href="https://maps-website.com/">maps-website.com</a>
+            <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=ac2972eee374f315ac465917875d0c2b242d4862'></script>
         </div>
         
     )

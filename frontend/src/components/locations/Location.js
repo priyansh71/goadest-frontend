@@ -30,8 +30,8 @@ const Location = (seacrchValue) => {
             address: 'abc',
             description: 'abcdefgh',
             typeofplace: 'beach',
-            latitude: 1,
-            longitude: 1
+            latitude: 15.353334767659915,
+            longitude: 73.7778551695931
         },
     ]
 
