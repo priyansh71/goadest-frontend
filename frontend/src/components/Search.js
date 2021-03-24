@@ -1,17 +1,25 @@
-import React from 'react';
-import {useRouteMatch} from 'react-router-dom';
+import React, { useState } from 'react';
+import { useRouteMatch } from 'react-router-dom';
+import { Button } from 'react-bootstrap'
 
 const Search = ({value, onChange}) => {
 
-    const {url} = useRouteMatch();
+    const [value, setValue] = useState('');
+    const { url } = useRouteMatch();
 
-    if(url === '/' || url === '/blogs') {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(`Submitting: ${value}${url}`)
+    }
+
+    if (url === '/') {
         return null;
     }
 
     return (
-        <form>
-            <input type='text' value={value} onChange={onChange}/>
+        <form onSubmit={handleSubmit}>
+            <input type='text' value={value} onChange={(e) => setValue(e.target.value)} />
+            <input id="button" type='submit' value='Submit' />
         </form>
     )
 
