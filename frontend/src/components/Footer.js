@@ -1,7 +1,7 @@
 import { Col, Container, Jumbotron, Row } from 'react-bootstrap'
 const Footer = () => {
     return (
-        <Jumbotron className="Jumbotron1">
+        <Jumbotron className="Jumbotron1" fixed="bottom">
             <Container>
                 <Row>
                     <Col>

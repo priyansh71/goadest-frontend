@@ -7,6 +7,15 @@ import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
+let counter = 1;
+setInterval(function () {
+  document.getElementById('r' + counter).checked = true;
+  counter++;
+  if (counter > 5) {
+    counter = 1;
+  }
+}, 7000);
+
 const Bootstrap = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-device-width: 800px)'
@@ -14,19 +23,18 @@ const Bootstrap = () => {
   const isTabletOrMobileDevice = useMediaQuery({
     query: '(max-device-width: 800px)'
   })
-
   return (
     <div>
       { isDesktopOrLaptop && <>
         <Jumbotron className="Jumbotron">
-          <h1>Let's plan your dream holiday destination!</h1>
+          <h1>Your dream holiday destination.</h1>
           <p>
-            Famed to be a paradise on earth, Goa has the right mix of everything that a tourist destination has to offer.
-            It is an ideal for tourist activities. It is beautiful because of its unbeatable greenery oozing out of
+            Famed to be the paradise on earth, Goa has the right mix of everything that a destination has to offer.
+            Being an ideal for tourist activities, it is beautiful because of the unbeatable greenery oozing out of
             the dense palm cover even at the most popular stretches of beaches.
-            The glimpse of peaceful life of the fisherman villages,The exciting water sports activities such as scuba diving and snorkelling, boat rides, water skiing for nimble footed ones, boating, cruising, surfing,
-            parasailing and jet skiing options would satisfy every adventure lover’s heart.
-          </p>
+            The glimpse of peaceful life of the fisherman villages, the exciting water sports activities of
+            scuba diving, boat rides, water skiing, cruising, surfing, along with the eternal peace of its beautiful beaches
+               would satisfy every adventure lover’s heart to the core.          </p>
         </Jumbotron>
         <div className="body">
           <div className="main">
@@ -36,20 +44,21 @@ const Bootstrap = () => {
               <input type="radio" name="radio-btn" id="r3" />
               <input type="radio" name="radio-btn" id="r4" />
               <input type="radio" name="radio-btn" id="r5" />
-
               <div className="slide first"><img src={e} alt="Image1" /></div>
               <div className="slide"><img src={b} alt="Image2" /></div>
               <div className="slide"><img src={c} alt="Image3" /></div>
               <div className="slide"><img src={d} alt="Image4" /></div>
               <div className="slide"><img src={a} alt="Image5" /></div>
 
-              <span className="navigation-auto">
+
+              <div className="navigation-auto">
                 <div className="auto-btn1"></div>
                 <div className="auto-btn2"></div>
                 <div className="auto-btn3"></div>
                 <div className="auto-btn4"></div>
                 <div className="auto-btn5"></div>
-              </span>
+              </div>
+
             </div>
 
             <div className="navigation-manual">
@@ -65,13 +74,14 @@ const Bootstrap = () => {
       { isTabletOrMobileDevice && <>
         <div>
           <Jumbotron className="Jumbotron">
-            <h1>Let's plan your dream holiday destination!</h1>
+            <h1>Your dream holiday destination.</h1>
             <p>
-              Famed to be a paradise on earth, Goa has the right mix of everything that a tourist destination has to offer.
-              It is an ideal for tourist activities. It is beautiful because of its unbeatable greenery oozing out of
+              Famed to be the paradise on earth, Goa has the right mix of everything that a destination has to offer.
+              Being an ideal for tourist activities, it is beautiful because of the unbeatable greenery oozing out of
               the dense palm cover even at the most popular stretches of beaches.
-              The glimpse of peaceful life of the fisherman villages,The exciting water sports activities such as scuba diving and snorkelling, boat rides, water skiing for nimble footed ones, boating, cruising, surfing,
-              parasailing and jet skiing options would satisfy every adventure lover’s heart..
+              The glimpse of peaceful life of the fisherman villages, the exciting water sports activities of
+              scuba diving, boat rides, water skiing, cruising, surfing, along with the eternal peace of its beautiful beaches
+              would satisfy every adventure lover’s heart to the core.
             </p>
           </Jumbotron>
           <div className="body3">
@@ -83,11 +93,11 @@ const Bootstrap = () => {
                 <input type="radio" name="radio-btn" id="r4" />
                 <input type="radio" name="radio-btn" id="r5" />
 
-                <div className="slide first"><img src={e} alt="Image1" /></div>
+                <div className="slide first"><img src={a} alt="Image1" /></div>
                 <div className="slide"><img src={b} alt="Image2" /></div>
                 <div className="slide"><img src={c} alt="Image3" /></div>
                 <div className="slide"><img src={d} alt="Image4" /></div>
-                <div className="slide"><img src={a} alt="Image5" /></div>
+                <div className="slide"><img src={e} alt="Image5" /></div>
 
                 <span className="navigation-auto">
                   <div className="auto-btn1"></div>
@@ -113,3 +123,4 @@ const Bootstrap = () => {
   )
 }
 export default Bootstrap
+
