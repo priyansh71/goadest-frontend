@@ -10,9 +10,9 @@ const Search = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type='text' value={value} onChange={(e) => setValue(e.target.value)}/>
-        <input type='submit' value='Submit' />
+        <form action={`/locations/${value}`}>
+            <input type='text' name='q' value={value} onChange={(e) => setValue(e.target.value)}/>
+            <input type='submit' value='Submit' />
         </form>
     )
 
