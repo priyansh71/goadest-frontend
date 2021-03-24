@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';

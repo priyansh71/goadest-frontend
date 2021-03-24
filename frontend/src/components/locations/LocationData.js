@@ -17,7 +17,8 @@ function LocationData({placename, address, description, typeofplace, latitude, l
                 src={`https://maps.google.com/maps?q=${latitude},${longitude}&hl=en&z=12&amp;&output=embed`}
                 width="500" 
                 height="200" 
-                scrolling="yes" 
+                scrolling="yes"
+                title={placename} 
                 >
             </iframe>
             
