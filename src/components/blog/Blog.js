@@ -1,5 +1,5 @@
 import BlogBox from "./BlogBox";
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import BlogViewer from "./BlogViewer";
 import BlogCreator from "./BlogCreator";
 

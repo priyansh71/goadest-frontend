@@ -22,13 +22,12 @@ const Bootstrap = () => {
 					<Jumbotron className="Jumbotron">
 						<h1>Let's plan your dream holiday destination!</h1>
 						<p>
-							Famed to be a paradise on earth, Goa has the right mix of everything that a tourist
-							destination has to offer. It is an ideal for tourist activities. It is beautiful because of
+							Famed to be paradise on earth, Goa has the right mix of everything that a tourist
+							destination has to offer.It is beautiful because of
 							its unbeatable greenery oozing out of the dense palm cover even at the most popular
 							stretches of beaches. The glimpse of peaceful life of the fisherman villages,The exciting
-							water sports activities such as scuba diving and snorkelling, boat rides, water skiing for
-							nimble footed ones, boating, cruising, surfing, parasailing and jet skiing options would
-							satisfy every adventure lover’s heart.
+							water sports activities such as scuba diving, boat rides, water skiing, boating, cruising, surfing, along with the peace of the sunset beach
+							en enough to satisfy every adventure lover’s heart.
 						</p>
 					</Jumbotron>
 					<div className="body">
@@ -82,13 +81,12 @@ const Bootstrap = () => {
 						<Jumbotron className="Jumbotron">
 							<h1>Let's plan your dream holiday destination!</h1>
 							<p>
-								Famed to be a paradise on earth, Goa has the right mix of everything that a tourist
-								destination has to offer. It is an ideal for tourist activities. It is beautiful because
-								of its unbeatable greenery oozing out of the dense palm cover even at the most popular
-								stretches of beaches. The glimpse of peaceful life of the fisherman villages,The
-								exciting water sports activities such as scuba diving and snorkelling, boat rides, water
-								skiing for nimble footed ones, boating, cruising, surfing, parasailing and jet skiing
-								options would satisfy every adventure lover’s heart..
+								Famed to be paradise on earth, Goa has the right mix of everything that a tourist
+								destination has to offer.It is beautiful because of
+								its unbeatable greenery oozing out of the dense palm cover even at the most popular
+								stretches of beaches. The glimpse of peaceful life of the fisherman villages,The exciting
+								water sports activities such as scuba diving, boat rides, water skiing, boating, cruising, surfing, along with the peace of the sunset beach
+								en enough to satisfy every adventure lover’s heart.
 							</p>
 						</Jumbotron>
 						<div className="body3">

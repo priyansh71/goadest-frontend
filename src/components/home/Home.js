@@ -6,14 +6,7 @@ import { Container, Jumbotron, Row } from "react-bootstrap";
 const Home = () => {
 	return (
 		<div>
-			<Container fluid>
-				<Row>
-					<Search />
-				</Row>
-			</Container>
 			<Bootstrap />
-			<Jumbotron />
-			<RecentBlogs />
 		</div>
 	);
 };
