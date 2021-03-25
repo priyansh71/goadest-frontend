@@ -13,12 +13,15 @@ const BlogCreator = () => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} placeholder='Title' />
+            <center>
+                <form onSubmit={handleSubmit}>
+                    <input id="title" type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} placeholder='Blog Title' />
 
-                <input type="submit" value='POST' />
-            </form>
-            <textarea value={content} onChange={(e) => { setContent(e.target.value) }} rows='20' cols='200' placeholder='Content'>CONTENT</textarea>
+                    <input id="post" type="submit" value='POST' />
+                    <br />
+                    <textarea value={content} onChange={(e) => { setContent(e.target.value) }} rows='20' cols='200' placeholder='Blog Content'>CONTENT</textarea>
+                </form>
+            </center>
         </div>
     )
 }
