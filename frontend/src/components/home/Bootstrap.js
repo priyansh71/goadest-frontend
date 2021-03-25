@@ -6,17 +6,14 @@ import e from '../../images/e.jpg';
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import Jumbotron from 'react-bootstrap/Jumbotron'
+const style = {
+  backgroundColor: '#e3cad0'
+}
 
-let counter = 1;
-setInterval(function () {
-  document.getElementById('r' + counter).checked = true;
-  counter++;
-  if (counter > 5) {
-    counter = 1;
-  }
-}, 7000);
+
 
 const Bootstrap = () => {
+
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-device-width: 800px)'
   })
@@ -24,7 +21,7 @@ const Bootstrap = () => {
     query: '(max-device-width: 800px)'
   })
   return (
-    <div>
+    <div style={style}>
       { isDesktopOrLaptop && <>
         <Jumbotron className="Jumbotron">
           <h1>Your dream holiday destination.</h1>
@@ -123,4 +120,6 @@ const Bootstrap = () => {
   )
 }
 export default Bootstrap
+
+
 
