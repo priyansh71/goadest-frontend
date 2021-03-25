@@ -1,11 +1,45 @@
+import axios from "axios"
+import { useEffect, useState } from "react"
+
 const BlogViewer = () => {
-    //const {url} = useRouteMatch();
-    
-    const blog = {title: "Blog-1", content: 'This is a blog'}; //fetch(url) from backend
+
+
+    const [blogs, setBlogs] = useState(null)
+
+    const callFn = () => {
+
+        axios.get(`${process.env.REACT_APP_GOADEST_BACKEND}/posts`)
+            .then((res) => {
+                setBlogs(res.data);
+                console.log(res.data);
+            }).catch((e) => {
+                console.log(e.message)
+            })
+        console.log(blogs)
+    }
+
+    useEffect(() => {
+
+        callFn()
+
+    }, []);
+
+    useEffect(() => {
+
+        callFn()
+
+    }, [setBlogs]);
+
+
     return (
         <div>
-            <h1>{blog.title}</h1>
-            <p>{blog.content}</p>
+            {blogs && blogs.map((blog) => (
+                <div>
+                    <h1>{blog.title}</h1>
+                    <p>{blog.content}</p>
+                </div>
+            )
+            )}
         </div>
     )
 }

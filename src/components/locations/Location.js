@@ -1,12 +1,16 @@
-import {useState} from 'react';
+import { useEffect, useState } from 'react';
 import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';
+import axios from 'axios';
 
-const Location = (seacrchValue) => {
+const Location = () => {
 
     const [radius, setRadius] = useState(0);
-    const [option, setOption] = useState('all')
+    const [option, setOption] = useState('');
+    const [locations, setLocations] = useState(null);
+
+
     const handleChange_radius = (e) => {
         setRadius(e.target.value);
     }
@@ -14,34 +18,34 @@ const Location = (seacrchValue) => {
         setOption(e.target.id);
     }
 
-    /*useEffect(() => {
-        // I have radius, option and searchValue. Need to send these to backend
-        // send(searchValue,radius,option)
-        const recieve = '';// = recieve(from backend)
-        const locations = JSON.parse(recieve);
-        alert(`HELLO`);
+    const callFn = () => {
+        axios.get(`${process.env.REACT_APP_GOADEST_BACKEND}/travelplaces`).then((res) => {
+            setLocations(res.data)
+        }).catch((e) => {
+            console.log(e.message)
+        })
+    }
+
+    useEffect(() => {
+
+        callFn();
+
+    }, [])
 
 
-    });*/
+    useEffect(() => {
 
-    const locations = [
-        {
-            key: 1,
-            address: 'abc',
-            description: 'abcdefgh',
-            typeofplace: 'beach',
-            latitude: 15.353334767659915,
-            longitude: 73.7778551695931
-        },
-    ]
+        callFn();
+
+    }, [setLocations])
 
 
     return (
         <div>
             <h2>Location Page</h2>
-            <MainSection locations={locations}/>
+            <MainSection locations={locations} />
             <div>
-                <RadiusFilter onChange={handleChange_radius} radius={radius}/>
+                <RadiusFilter onChange={handleChange_radius} radius={radius} />
                 <OptionFilter onChange={handleChange_option} option={option} />
             </div>
         </div>

@@ -1,9 +1,9 @@
 
-const RadiusFilter = ({onChange, radius}) => {
+const RadiusFilter = ({ onChange, radius }) => {
     return (
         <label>
             Radius:
-            <input type='range' min='1' max='100' value={radius} onChange={onChange}/>
+            <input type='range' min='5' max='100' value={radius} onChange={onChange} />
         </label>
     )
 }
