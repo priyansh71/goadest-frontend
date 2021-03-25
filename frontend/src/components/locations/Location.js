@@ -3,6 +3,7 @@ import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';
 import Search from '../Search';
+import styles from './Location.module.css';
 
 const Location = () => {
 
@@ -45,15 +46,23 @@ const Location = () => {
 
 
     return (
-        <div>
+        <>
             <h2>Location Page</h2>
-            <Search value={searchValue} onChange={handleSearchChange}/>
-            <MainSection locations={locations}/>
-            <div>
-                <RadiusFilter onChange={handleChange_radius} radius={radius}/>
-                <OptionFilter onChange={handleChange_option} option={option} />
+            <div className={styles.searchHolder}>
+                <Search value={searchValue} onChange={handleSearchChange}/>
             </div>
-        </div>
+            <section className={styles.container}>
+                <div className={styles.main}>
+                <MainSection locations={locations}/>
+                </div>
+                <div className={styles.filters}>
+                    <h4>Filters</h4>
+                    <RadiusFilter onChange={handleChange_radius} radius={radius}/>
+                    <OptionFilter onChange={handleChange_option} option={option} />
+                </div>
+            </section>
+            
+        </>
     )
 }
 

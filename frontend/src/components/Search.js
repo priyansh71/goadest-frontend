@@ -1,3 +1,5 @@
+import styles from './locations/Location.js'
+
 const Search = ({value, onChange}) => {
 
     const handleSubmit = (e) => {
@@ -8,7 +10,7 @@ const Search = ({value, onChange}) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type='text' value={value} onChange={onChange} />
+            <input className={styles.Search} type='text' value={value} onChange={onChange} />
             <input id="button" type='submit' value='Submit' />
         </form>
     )
