@@ -6,38 +6,34 @@ import axios from 'axios';
 
 const Location = () => {
 
-    const [radius, setRadius] = useState(0);
+    const [distance, setDistance] = useState(0);
     const [option, setOption] = useState('');
     const [locations, setLocations] = useState(null);
 
+    const location = { distance, option };
 
-    const handleChange_radius = (e) => {
-        setRadius(e.target.value);
+    const handleChange_distance = (e) => {
+        setDistance(e.target.value);
     }
     const handleChange_option = (e) => {
         setOption(e.target.id);
     }
 
-    const callFn = () => {
-        axios.get(`${process.env.REACT_APP_GOADEST_BACKEND}/travelplaces`).then((res) => {
+    const handleFindDest = () => {
+
+        axios({
+            url: `${process.env.REACT_APP_GOADEST_BACKEND}/travelplaces`,
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            data: location
+        }).then((res) => {
             setLocations(res.data)
         }).catch((e) => {
             console.log(e.message)
         })
     }
-
-    useEffect(() => {
-
-        callFn();
-
-    }, [])
-
-
-    useEffect(() => {
-
-        callFn();
-
-    }, [setLocations])
 
 
     return (
@@ -45,8 +41,9 @@ const Location = () => {
             <h2>Location Page</h2>
             <MainSection locations={locations} />
             <div>
-                <RadiusFilter onChange={handleChange_radius} radius={radius} />
+                <RadiusFilter onChange={handleChange_distance} distance={distance} />
                 <OptionFilter onChange={handleChange_option} option={option} />
+                <button onClick={handleFindDest} >FInd me a destination</button>
             </div>
         </div>
     )
