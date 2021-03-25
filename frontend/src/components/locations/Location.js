@@ -2,7 +2,7 @@ import {useState} from 'react';
 import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';
-import Search from '../Search';
+import Search from './Search';
 import styles from './Location.module.css';
 
 const Location = () => {
@@ -47,7 +47,6 @@ const Location = () => {
 
     return (
         <>
-            <h2>Location Page</h2>
             <div className={styles.searchHolder}>
                 <Search value={searchValue} onChange={handleSearchChange}/>
             </div>
