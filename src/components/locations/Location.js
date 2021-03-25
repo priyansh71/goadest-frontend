@@ -7,16 +7,16 @@ import axios from 'axios';
 const Location = () => {
 
     const [distance, setDistance] = useState(0);
-    const [option, setOption] = useState('');
+    const [option, setOption] = useState('all');
     const [locations, setLocations] = useState(null);
 
-    const location = { distance, option };
+    const location = { distance, typeofplace: option };
 
     const handleChange_distance = (e) => {
         setDistance(e.target.value);
     }
     const handleChange_option = (e) => {
-        setOption(e.target.id);
+        setOption(e.target.value);
     }
 
     const handleFindDest = () => {
