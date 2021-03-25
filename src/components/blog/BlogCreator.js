@@ -19,6 +19,7 @@ const BlogCreator = () => {
 
                     <input id="post" type="submit" value='POST' />
                     <br />
+                    <br />
                     <textarea value={content} onChange={(e) => { setContent(e.target.value) }} rows='20' cols='200' placeholder='Blog Content'>CONTENT</textarea>
                 </form>
             </center>

@@ -2,7 +2,9 @@ import { Col, Container, Jumbotron, Row } from 'react-bootstrap'
 const Footer = () => {
     return (
         <div>
+            <br />
             <hr className="rule" />
+            <br />
             <Jumbotron className="Jumbotron1">
                 <Container fluid>
                     <Row>
