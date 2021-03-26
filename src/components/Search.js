@@ -1,20 +1,50 @@
-import styles from './Location.module.css'
+import axios from "axios";
+import { useState } from "react";
+import styles from "./Location.module.css";
+import LocationData from "./LocationData";
 
-const Search = ({value, onChange}) => {
+const Search = ({ value, onChange }) => {
+	const [location, setLocation] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Probably not needed. Will need to check performance and decide accordingly
-    }
+	const handleSubmit = (e) => {
+		e.preventDefault();
 
-    return (
-        <form onSubmit={handleSubmit}>
-            
-            <input className={styles.search} type='text' value={value} onChange={onChange} />
-            <input id="button" type='submit' value='Search' />
-        </form>
-    )
+		axios({
+			url: `${config.backendUrl}/post`,
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			data: {
+				userSearch: value,
+			},
+		})
+			.then((res) => {
+				setLocation(res.data);
+			})
+			.catch((e) => {
+				console.log(e.message);
+			});
+	};
 
-}
+	return (
+		<div>
+			<form onSubmit={handleSubmit}>
+				<input className={styles.search} type="text" value={value} onChange={onChange} />
+				<input id="button" type="submit" value="Submit" />
+			</form>
+			{location && (
+				<LocationData
+					placename={location.placename}
+					address={location.address}
+					description={location.description}
+					typeofplace={location.typeofplace}
+					latitude={location.latitude}
+					longitude={location.longitude}
+				/>
+			)}
+		</div>
+	);
+};
 
 export default Search;
