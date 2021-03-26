@@ -1,3 +1,4 @@
+import './Location.module.css'
 
 const RadiusFilter = ({ onChange, distance }) => {
     return (

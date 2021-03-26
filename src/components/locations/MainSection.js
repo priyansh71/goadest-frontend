@@ -1,6 +1,6 @@
 import LocationData from './LocationData'
 
-const MainSection = ({ locations = [] }) => {
+const MainSection = ({ locations }) => {
     return (
         <div>
             Main Section

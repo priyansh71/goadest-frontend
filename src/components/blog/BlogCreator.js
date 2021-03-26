@@ -28,14 +28,21 @@ const BlogCreator = () => {
             history.push('/blogs')
         })
     }
+
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} />
-                <input type="text" value={author} onChange={(e) => { setAuthor(e.target.value) }} />
-                <input type="text" value={content} onChange={(e) => { setContent(e.target.value) }} />
-                <input type="submit" value='POST' />
-            </form>
+            <center>
+                <form onSubmit={handleSubmit}>
+                    <input id="title" type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} placeholder='Blog Title' />
+
+                    <input type="text" value={author} onChange={(e) => { setAuthor(e.target.value) }} />
+
+                    <input id="post" type="submit" value='POST' />
+                    <br />
+                    <br />
+                    <textarea value={content} onChange={(e) => { setContent(e.target.value) }} rows='20' cols='200' placeholder='Blog Content'>CONTENT</textarea>
+                </form>
+            </center>
         </div>
     )
 }

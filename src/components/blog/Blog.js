@@ -36,24 +36,25 @@ const Blog = () => {
                 <Route path='/blogs/createblog' component={BlogCreator} />
 
                 <div>
-                    Background goes here
-                    {/* Add create blog button */}
+                    <hr className="rule" />
+                    <center>
+                        <button variant="dark">
+                            <Link className="linkname" to='/blogs/createblog'>
+                                <span >Create a Blog </span>
+                            </Link>
+                        </button>
 
-                    <div>
-                        <Link to='/blogs/createblog'>Create a Blog</Link>
-                    </div>
+                    </center>
 
 
-                    {blogTiles && <div> {blogTiles.map((blog) => (
-                        <div key={blog._id}><BlogBox title={blog.title} address={blog._id} /></div>
-                    ))}
-                    </div>
-                    }
-
+                    {blogTiles && blogTiles.map((blog) => {
+                        return (
+                            <div key={blog.id}>
+                                <BlogBox title={blog.title} address={blog._id} />
+                            </div>
+                        )
+                    })}
                 </div>
-
-
-                <Route path='/blogs/readblogs' component={BlogViewer} />
 
             </Router>
         </div>

@@ -1,21 +1,19 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 
-const BlogViewer = () => {
+const BlogViewer = ({ id }) => {
 
-
-    const [blogs, setBlogs] = useState(null)
+    const [blog, setBlog] = useState(null)
 
     const callFn = () => {
 
-        axios.get(`${process.env.REACT_APP_GOADEST_BACKEND}/posts`)
+        axios.get(`${process.env.REACT_APP_GOADEST_BACKEND}/post/${id}`)
             .then((res) => {
-                setBlogs(res.data);
+                setBlog(res.data);
                 console.log(res.data);
             }).catch((e) => {
                 console.log(e.message)
             })
-        console.log(blogs)
     }
 
     useEffect(() => {
@@ -27,14 +25,15 @@ const BlogViewer = () => {
 
     return (
         <div>
-            {blogs && blogs.map((blog) => (
-                <div>
-                    <h1>{blog.title}</h1>
-                    <h3>{blog.author}</h3>
-                    <p>{blog.content}</p>
-                </div>
-            )
-            )}
+
+            <center>
+                <hr className="ruler" />
+                <div id="head">{blog && blog.title}</div>
+                <br />
+                <div>{blog && blog.author}</div>
+                <hr className="ruler" />
+                <div id="content">{blog && blog.content}</div>
+            </center>
         </div>
     )
 }

@@ -3,11 +3,13 @@ import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';
 import axios from 'axios';
+import Search from './Search';
 
 const Location = () => {
 
     const [distance, setDistance] = useState(0);
     const [option, setOption] = useState('all');
+    const [searchValue, setSearchValue] = useState('');
     const [locations, setLocations] = useState(null);
 
     const location = { distance, typeofplace: option };
@@ -17,6 +19,9 @@ const Location = () => {
     }
     const handleChange_option = (e) => {
         setOption(e.target.value);
+    }
+    const handleSearchChange = (e) => {
+        setSearchValue(e.target.value);
     }
 
     const handleFindDest = () => {
@@ -38,13 +43,21 @@ const Location = () => {
 
     return (
         <div>
-            <h2>Location Page</h2>
-            <MainSection locations={locations} />
-            <div>
-                <RadiusFilter onChange={handleChange_distance} distance={distance} />
-                <OptionFilter onChange={handleChange_option} option={option} />
-                <button onClick={handleFindDest} >FInd me a destination</button>
+            <div className='styles.searchHolder'>
+                <Search value={searchValue} onChange={handleSearchChange} />
             </div>
+            <section className='container'>
+                <div className='styles.main'>
+                    <MainSection locations={locations} />
+                </div>
+                <div className='filters'>
+                    <h4>Filters</h4>
+                    <RadiusFilter onChange={handleChange_distance} distance={distance} />
+                    <OptionFilter onChange={handleChange_option} option={option} />
+                </div>
+                <button onClick={handleFindDest}> Find Destinations </button>
+            </section>
+
         </div>
     )
 }
