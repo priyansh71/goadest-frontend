@@ -22,23 +22,23 @@ const Blog = () => {
                             <span >Create a Blog </span>
                         </Link>
                     </Button>
-
                 </center>
 
-
-                {blogTiles.map((blog) => {
-                    return (
-                        <div key={blog.id}>
-                            <BlogBox title={blog.title} address={blog.id} />
-                        </div>
-                    )
-                })}
+                {
+                    blogTiles.map((blog) => {
+                        return (
+                            <div key={blog.id}>
+                                <BlogBox title={blog.title} address={blog.id} />
+                            </div>
+                        )
+                    })
+                }
 
                 <Route path='/blogs/readblogs' component={BlogViewer} />
                 <Route path='/blogs/createblog' component={BlogCreator} />
 
-            </Router>
-        </div>
+            </Router >
+        </div >
     )
 }
 
