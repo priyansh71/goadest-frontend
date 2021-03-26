@@ -20,28 +20,28 @@ const Blog = () => {
             })
     }
 
+
     useEffect(() => {
 
-        callFn()
+        callFn();
 
     }, []);
 
-    useEffect(() => {
-
-        callFn()
-
-    }, [setBlogs]);
-
-    console.log(blogTiles)
 
     return (
         <div>
             <Router>
+
+
+                <Route path='/blogs/createblog' component={BlogCreator} />
+
                 <div>
                     Background goes here
                     {/* Add create blog button */}
 
-                    <Link to='/blogs/createblog'>Create a Blog</Link>
+                    <div>
+                        <Link to='/blogs/createblog'>Create a Blog</Link>
+                    </div>
 
 
                     {blogTiles && <div> {blogTiles.map((blog) => (
@@ -55,10 +55,8 @@ const Blog = () => {
 
                 <Route path='/blogs/readblogs' component={BlogViewer} />
 
-                <Route path='/blogs/createblog' component={BlogCreator} />
-
             </Router>
-        </div >
+        </div>
     )
 }
 

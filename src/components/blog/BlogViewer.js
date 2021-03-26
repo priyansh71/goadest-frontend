@@ -24,18 +24,13 @@ const BlogViewer = () => {
 
     }, []);
 
-    useEffect(() => {
-
-        callFn()
-
-    }, [setBlogs]);
-
 
     return (
         <div>
             {blogs && blogs.map((blog) => (
                 <div>
                     <h1>{blog.title}</h1>
+                    <h3>{blog.author}</h3>
                     <p>{blog.content}</p>
                 </div>
             )

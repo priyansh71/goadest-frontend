@@ -1,11 +1,14 @@
 import axios from 'axios';
 import { useState } from 'react'
+import { useHistory } from 'react-router';
 
 const BlogCreator = () => {
 
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [content, setContent] = useState('');
+
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,10 +22,10 @@ const BlogCreator = () => {
             },
             data: blog
         }).then(() => {
-            alert('New Blog Added');
             setTitle('');
             setContent('');
             setAuthor('');
+            history.push('/blogs')
         })
     }
     return (
