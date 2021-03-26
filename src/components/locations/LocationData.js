@@ -4,7 +4,7 @@ import getDistfromCoords from '../../getdistance'
 
 function LocationData({ placename, address, description, typeofplace, image, latitude, longitude }) {
 
-    const distance = 10;//Math.trunc(getDistfromCoords(latitude.$numberDecimal, longitude.$numberDecimal))
+    const distance = Math.trunc(getDistfromCoords(latitude.$numberDecimal, longitude.$numberDecimal))
 
     return (
         <div className={Styles.cell}>

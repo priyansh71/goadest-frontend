@@ -12,8 +12,8 @@ const MainSection = ({ locations }) => {
                             description={location.description}
                             typeofplace={location.typeofplace}
                             image={location.imageurl}
-                            latitude={location.latitude}
-                            longitude={location.longitude}
+                            latitude={location.latitude.$numberDecimal}
+                            longitude={location.longitude.$numberDecimal}
                         />
                     </div>)
             })}
