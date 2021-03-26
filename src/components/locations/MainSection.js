@@ -3,7 +3,6 @@ import LocationData from './LocationData'
 const MainSection = ({locations}) => {
     return (
         <div>
-            Main Section
             {locations.map((location) => {
                 return (
                     <div key={location.key} >

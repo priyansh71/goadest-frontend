@@ -36,17 +36,19 @@ const Location = () => {
     const locations = [
         {
             key: 1,
-            address: 'abc',
-            description: 'abcdefgh',
+            placename: 'Name',
+            address: 'address',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur necessitatibus nesciunt dignissimos illo sapiente consectetur non totam. Doloribus et quia nam suscipit nihil vero sequi nobis aut ut modi?',
             typeofplace: 'beach',
             latitude: 15.353334767659915,
             longitude: 73.7778551695931
         },
+
     ]
 
 
     return (
-        <>
+        <div className={styles.locationContainer}>
             <div className={styles.searchHolder}>
                 <Search value={searchValue} onChange={handleSearchChange}/>
             </div>
@@ -61,7 +63,7 @@ const Location = () => {
                 </div>
             </section>
             
-        </>
+        </div>
     )
 }
 
