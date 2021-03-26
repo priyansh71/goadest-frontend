@@ -1,41 +1,61 @@
 import BlogBox from "./BlogBox";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import BlogViewer from "./BlogViewer";
 import BlogCreator from "./BlogCreator";
-import { Button } from 'react-bootstrap';
-
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
 
 const Blog = () => {
-    const blogTiles = [
-        { id: 1, title: 'Blog-1' },
-        { id: 2, title: 'Blog-2' },
-    ]; //fetch tiles from backend    
+
+
+    const [blogTiles, setBlogs] = useState(null)
+
+    const callFn = () => {
+
+        axios.get(`${process.env.REACT_APP_GOADEST_BACKEND}/posts`)
+            .then((res) => {
+                setBlogs(res.data);
+            }).catch((e) => {
+                console.log(e.message)
+            })
+    }
+
+
+    useEffect(() => {
+
+        callFn();
+
+    }, []);
+
 
     return (
         <div>
             <Router>
-                <hr className="rule" />
-                <center>
-                    {/* Add create blog button */}
-                    <Button variant="dark">
-                        <Link className="linkname" to='/blogs/createblog'>
-                            <span >Create a Blog </span>
-                        </Link>
-                    </Button>
-
-                </center>
 
 
-                {blogTiles.map((blog) => {
-                    return (
-                        <div key={blog.id}>
-                            <BlogBox title={blog.title} address={blog.id} />
-                        </div>
-                    )
-                })}
-
-                <Route path='/blogs/readblogs' component={BlogViewer} />
                 <Route path='/blogs/createblog' component={BlogCreator} />
+
+                <div>
+                    <hr className="rule" />
+                    <center>
+                        <Button variant="dark">
+                            <Link className="linkname" to='/blogs/createblog'>
+                                <span >Create a Blog </span>
+                            </Link>
+                        </Button>
+
+                    </center>
+
+
+                    {blogTiles && blogTiles.map((blog) => {
+                        return (
+                            <div key={blog.id}>
+                                <BlogBox title={blog.title} address={blog._id} />
+                            </div>
+                        )
+                    })}
+                </div>
 
             </Router>
         </div>

@@ -1,67 +1,64 @@
-import {useState} from 'react';
+import { useEffect, useState } from 'react';
 import MainSection from './MainSection'
 import RadiusFilter from './RadiusFilter';
 import OptionFilter from './OptionFilter';
+import axios from 'axios';
 import Search from './Search';
-import styles from './Location.module.css';
 
 const Location = () => {
 
-    const [radius, setRadius] = useState(100);
+    const [distance, setDistance] = useState(0);
     const [option, setOption] = useState('all');
     const [searchValue, setSearchValue] = useState('');
+    const [locations, setLocations] = useState(null);
 
-    const handleChange_radius = (e) => {
-        setRadius(e.target.value);
+    const location = { distance, typeofplace: option };
+
+    const handleChange_distance = (e) => {
+        setDistance(e.target.value);
     }
     const handleChange_option = (e) => {
-        setOption(e.target.id);
+        setOption(e.target.value);
     }
     const handleSearchChange = (e) => {
         setSearchValue(e.target.value);
     }
 
-    /*useEffect(() => {
-        // I have radius, option and searchValue. Need to send these to backend
-        // send(searchValue,radius,option)
-        const recieve = '';// = recieve(from backend)
-        const locations = JSON.parse(recieve);
-        alert(`HELLO`);
+    const handleFindDest = () => {
 
-
-    });*/
-
-    // Recieve data from backend, create an array of locations called 'locations'
-
-    const locations = [
-        {
-            key: 1,
-            address: 'abc',
-            description: 'abcdefgh',
-            typeofplace: 'beach',
-            latitude: 15.353334767659915,
-            longitude: 73.7778551695931
-        },
-    ]
+        axios({
+            url: `${process.env.REACT_APP_GOADEST_BACKEND}/travelplaces`,
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            data: location
+        }).then((res) => {
+            setLocations(res.data)
+        }).catch((e) => {
+            console.log(e.message)
+        })
+    }
 
 
     return (
-        <>
-            <div className={styles.searchHolder}>
-                <Search value={searchValue} onChange={handleSearchChange}/>
+        <div>
+            <div className='styles.searchHolder'>
+                <Search value={searchValue} onChange={handleSearchChange} />
             </div>
-            <section className={styles.container}>
-                <div className={styles.main}>
-                <MainSection locations={locations}/>
+            <section className='container'>
+                <div className='styles.main'>
+                    <MainSection locations={locations} />
                 </div>
-                <div className={styles.filters}>
+                <div className='filters'>
                     <h4>Filters</h4>
-                    <RadiusFilter onChange={handleChange_radius} radius={radius}/>
+                    <RadiusFilter onChange={handleChange_distance} distance={distance} />
                     <OptionFilter onChange={handleChange_option} option={option} />
                 </div>
+                <button onClick={handleFindDest}> Find Destinations </button>
             </section>
-            
-        </>
+
+        </div>
     )
 }
 
