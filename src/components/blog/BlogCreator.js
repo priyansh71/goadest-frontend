@@ -9,14 +9,20 @@ const BlogCreator = () => {
         e.preventDefault();
         const blog = { title: title, content: content };
         console.log(blog);
+        // Send the object 'blog' to backend
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} />
-                <input type="text" value={content} onChange={(e) => { setContent(e.target.value) }} />
-                <input type="submit" value='POST' />
-            </form>
+            <center>
+                <form onSubmit={handleSubmit}>
+                    <input id="title" type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} placeholder='Blog Title' />
+
+                    <input id="post" type="submit" value='POST' />
+                    <br />
+                    <br />
+                    <textarea value={content} onChange={(e) => { setContent(e.target.value) }} rows='20' cols='200' placeholder='Blog Content'>CONTENT</textarea>
+                </form>
+            </center>
         </div>
     )
 }
