@@ -26,7 +26,7 @@ const BlogViewer = ({ id }) => {
     return (
         <div>
 
-            <center>
+            <center className="blogCenter" >
                 <hr className="ruler" />
                 <div id="head">{blog && blog.title}</div>
                 <br />

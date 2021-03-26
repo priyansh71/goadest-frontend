@@ -7,15 +7,15 @@
 @import url("https://fonts.googleapis.com/css?family=Baskerville");
 @import url("https://fonts.googleapis.com/css?family=Bellefair");
 
-.brand{
+.brand {
   font-size: 4em;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   padding: 15px;
 }
-#navbar{
+#navbar {
   border-bottom: 2px solid #bdbbbb;
 }
-.mr-auto{
+.mr-auto {
   text-align: end;
   font-size: 1.5em;
   text-decoration: none;
@@ -34,55 +34,51 @@ form > input {
   padding-right: 10px;
   margin: auto;
 }
-form > #title{
+form > #title {
   width: 40vw;
   padding: 10px;
-  border:1px solid black;
+  border: 1px solid black;
   margin: 9px;
-  font-family: 'Laila';
-
-
+  font-family: "Laila";
 }
-form > #post{
-  padding:10px;
+form > #post {
+  padding: 10px;
 }
-#Blogs{
+#Blogs {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-form > #title::placeholder{
+form > #title::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
-  font-family: 'Laila';
-
+  font-family: "Laila";
 }
 
-textarea{
+textarea {
   width: 70vw;
   height: 70vh;
   padding: 10px;
-  border:1.5px solid black;
-  font-family: 'Laila';
-
+  border: 1.5px solid black;
+  font-family: "Laila";
 }
 
-textarea::placeholder{
+textarea::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
   padding-top: 10px;
-  font-family: 'Laila';
+  font-family: "Laila";
 }
 
 .App {
   text-align: center;
 }
 center {
-  padding:18px;
+  padding: 18px;
 }
 
 .App-header {
@@ -99,12 +95,12 @@ center {
 .body {
   margin: 0;
   padding: 0;
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:url(./images/f.jpg);
+  background-image: url(./images/f.jpg);
 }
 .main {
   width: 800px;
@@ -112,7 +108,7 @@ center {
   border-radius: 10px;
   overflow: hidden;
 }
-#content{
+#content {
   height: 30vh;
   padding: 20px;
   font-size: 25px;
@@ -122,56 +118,52 @@ center {
   padding: 20px;
   font-size: 40px;
   font-weight: 500;
-
 }
 
-.link:hover{
+.link {
   text-decoration: none;
   font-size: 1.6em;
-  font-family: 'Kalam';
-}
-.link{
-  text-decoration: none;
-  font-size: 1.6em;
-  font-family: 'Kalam';
+  font-family: "Kalam";
 }
 
-.linkname{
+.link:hover {
+  text-decoration: none;
+  font-size: 1.6em;
+  font-family: "Kalam";
+}
+
+.linkname {
   text-decoration: none;
   color: #f2f2f2;
   padding: 30px;
   font-size: 3.5em;
-  font-family: 'Dancing Script';
-
+  font-family: "Dancing Script";
 }
-.linkname:hover{
+.linkname:hover {
   text-decoration: none;
   color: #f2f2f2;
   padding: 30px;
   font-size: 3.5rem;
-  font-family: 'Dancing Script';
-
+  font-family: "Dancing Script";
 }
 
-#Button{
+#Button {
   border: 1px solid black;
 }
 
-.bloglinkname{
+.bloglinkname {
   text-decoration: none;
   padding: 12px;
   font-size: 1.8em;
   color: black;
-  font-family: 'Courgette';
-
+  font-family: "Courgette";
 }
 
-.bloglinkname:hover{
-  text-decoration: none ;
+.bloglinkname:hover {
+  text-decoration: none;
   padding: 12px;
-  font-size: 1.em;
+  font-size: 1.8em;
   color: black;
-
 }
 .master {
   width: 500%;
@@ -299,29 +291,29 @@ Link:hover {
 
 .Jumbotron {
   /* padding: 40px; */
-  background-image:url(./images/info1.jpg);
+  background-image: url(./images/info1.jpg);
 }
 
 .Jumbotron1 {
-  width: 100vw ;
+  width: 100vw;
   padding: 40px;
   background-color: #282c34;
 }
 
 .Jumbotron h1 {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
   text-align: center;
   padding: 30px;
   font-size: 60px;
   font-weight: 400;
-  font-family: 'Baskerville';
+  font-family: "Baskerville";
 }
 
 .Jumbotron p {
   text-align: center;
   font-size: 30px;
   font-weight: 200;
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   padding: 50px 50px 50px 50px;
 }
 
@@ -331,11 +323,11 @@ Link:hover {
   font-weight: 100;
   padding: 30px;
   color: #f2f2f2;
-  font-family: 'Architects Daughter';
+  font-family: "Architects Daughter";
 }
-.rule{
+.rule {
   width: 58vw;
-border: 0.5px solid grey;
+  border: 0.5px solid grey;
 }
 .container {
   margin: 0;
