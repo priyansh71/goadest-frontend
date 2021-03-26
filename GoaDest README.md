@@ -5,11 +5,11 @@ Search across the luxurious locations of Goa and enjoy the website's features
 Add blogs regarding your experience, the best memories of all the places you travel to in the beautiful state of Goa,
 while also reading across other people's travel stories in the blogs they have saved on the #Community feature.
 
-### Locations
+## Locations
 Search across multiple places in Goa, by applying the filter of the type of place you wanna visit,
 and get a whole list of locations which match your desire. Use the search bar and apply appropriate filters.
 
-#### Have Fun
+### Have Fun!
 Most importantly, have fun, add blogs regarding the places you visit and have a happy journey!
 
 
