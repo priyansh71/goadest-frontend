@@ -8,16 +8,20 @@
 @import url("https://fonts.googleapis.com/css?family=Bellefair");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 
-.brand{
+.brand {
   font-size: 4em;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   padding: 15px;
 }
-#navbar{
+#navbar {
   border-bottom: 2px solid #bdbbbb;
 }
-.mr-auto{
-  text-align: end;
+.ruler{
+  width: 65vw;
+  border: 0.1px solid #181e20;
+}
+.mr-auto {
+  text-align: right;
   font-size: 1.5em;
   text-decoration: none;
 }
@@ -35,34 +39,57 @@ form > input {
   padding-right: 10px;
   margin: auto;
 }
-form > #title{
-  width: 40vw;
-  padding: 10px;
-  border:1px solid black;
-  margin: 9px;
+form > #title {
+  padding: 20px;
+  margin: 10px;
+  width: 70%;
+  overflow-wrap:break-word ;
+  border: 1px solid black;
   font-family: 'Quicksand';
-
-
 }
-form > #post{
-  padding:10px;
+form > #author {
+  padding: 10px;
+  margin: 20px;
+  width: 40%;
+  overflow-wrap:break-word ;
+  border: 1px solid black;
+  font-family: 'Quicksand';
 }
-#Blogs{
+form > #post {
+  padding: 10px;
+}
+#Blogs {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-form > #title::placeholder{
+form > #title::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
   font-family: 'Quicksand';
 
 }
+.blogbuttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+form > #author::placeholder {
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  font-family: 'Quicksand';
+
+}
+
 #blogbox{
-  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
 }
 
 #create{
@@ -83,8 +110,7 @@ form > #title::placeholder{
 }
 
 center {
-  padding-top: 10px;
-  padding-bottom:10px;
+  padding:20px;
 }
 
 .App {
@@ -105,7 +131,7 @@ center {
 .body {
   margin: 0;
   padding: 0;
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -113,84 +139,122 @@ center {
 }
 
 #content{
-  max-width: 100% !important;
-  height: 30vh;
-  padding: 20px;
+  max-width: 60%;
   font-size: 25px;
   font-weight: 200;
+  padding: 15px;
+  margin: 20px;
+  overflow-wrap:break-word ;
 }
 #head {
-  padding: 20px;
   font-size: 40px;
   font-weight: 500;
+  font-family: 'Laila' ;
+}
+#head2{
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Laila' ;
+
 }
 
-
-.link:hover{
+.link:hover {
   text-decoration: none;
   font-size: 1.6em;
-  font-family: 'Kalam';
+  font-family: "Kalam";
 }
-.link{
+.link {
   text-decoration: none;
   font-size: 1.6em;
-  font-family: 'Kalam';
+  font-family: "Kalam";
 }
 
-.linkname{
+.linkname {
   text-decoration: none;
   color: #f2f2f2;
   padding: 30px;
   font-size: 3.5em;
-  font-family: 'Dancing Script';
-
+  font-family: "Dancing Script";
 }
-.linkname:hover{
+.linkname:hover {
   text-decoration: none;
   color: #f2f2f2;
   padding: 30px;
   font-size: 3.5rem;
-  font-family: 'Dancing Script';
-
+  font-family: "Dancing Script";
 }
 
-#Button{
+#Button {
   border: 1px solid black;
+  padding: 10px;
+  width: 80%;
+}
+#contentCreate {
+  width: 70vw;
+  height: 70vh;
+  padding: 10px;
+  border: 1.5px solid black;
+  font-family: "Quicksand";
 }
 
-.bloglinkname{
+.bloglinkname1 {
   text-decoration: none;
-  padding: 12px;
-  font-size: 1.8em;
+  padding: 20px;
+  font-size: 2.5em;
   color: black;
-  font-family: 'Courgette';
+  font-family: 'Laila';
+  text-align: center;
+  overflow-wrap:break-word ;
+  margin: 8px;
 
 }
-
-.bloglinkname:hover{
-  text-decoration: none ;
-  padding: 12px;
-  font-size: 1.em;
-  color: black;
-
+.bloglinkname2 {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.5em;
+  color: rgb(41, 41, 41);
+  font-family: 'Kalam';
+  margin: 8px;
+  text-align: right;
+  overflow-wrap:break-word ;
 }
-.carousel{
-  width:100% !important;
-height: 80vh;
+
+.bloglinkname1:hover {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2.5em;
+  color: black;
+  font-family: 'Laila';
+  text-align: center;
+  overflow-wrap:break-word ;
+  margin: 8px;
+}
+.bloglinkname2:hover {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.5em;
+  color: rgb(41, 41, 41);
+  font-family: 'Kalam';
+  margin: 8px;
+  text-align: right;
+  overflow-wrap:break-word ;
+}
+.carousel {
+  width: 100% !important;
+  height: 80vh;
   margin: 0 auto;
-  background-image:url(./images/fool.jpg);
+  background-image: url(./images/fool.jpg);
 }
 
-.item{
-  padding-top:50px;
-  width:100%;
- }
+.item {
+  padding-top: 50px;
+  width: 100%;
+}
 
-.item > img{
-  border-radius: 10px ;
+.item > img {
+  border-radius: 10px;
   width: 800px;
   height: 500px;
-
 }
 
 .body3 {
@@ -203,13 +267,10 @@ height: 80vh;
 Link:hover {
   text-decoration: none;
 }
-.ruler {
-  width: 50vw;
-}
 
 .Jumbotron {
   /* padding: 40px; */
-  background-image:url(./images/info1.jpg);
+  background-image: url(./images/info1.jpg);
 }
 #display{
   width: 70vw;
@@ -232,14 +293,14 @@ Link:hover {
   padding: 30px;
   font-size: 100px;
   font-weight: 400;
-  font-family: 'Tangerine';
+  font-family: "Tangerine";
 }
 
 .Jumbotron p {
   text-align: center;
   font-size: 30px;
   font-weight: 200;
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   padding: 50px 50px 50px 50px;
 }
 
@@ -249,11 +310,11 @@ Link:hover {
   font-weight: 100;
   padding: 30px;
   color: #f2f2f2;
-  font-family: 'Architects Daughter';
+  font-family: "Architects Daughter";
 }
-.rule{
+.rule {
   width: 65vw;
-border: 0.5px solid grey;
+  border: 0.5px solid grey;
 }
 .container {
   margin: 0;
