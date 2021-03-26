@@ -4,18 +4,18 @@
 @import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
 @import url("https://fonts.googleapis.com/css?family=Kalam");
 @import url("https://fonts.googleapis.com/css?family=Laila");
-@import url("https://fonts.googleapis.com/css?family=Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Bellefair");
 
-.brand{
+.brand {
   font-size: 4em;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   padding: 15px;
 }
-#navbar{
+#navbar {
   border-bottom: 2px solid #bdbbbb;
 }
-.mr-auto{
+.mr-auto {
   text-align: end;
   font-size: 1.5em;
   text-decoration: none;
@@ -34,55 +34,52 @@ form > input {
   padding-right: 10px;
   margin: auto;
 }
-form > #title{
+form > #title {
   width: 40vw;
   padding: 10px;
-  border:1px solid black;
+  border: 1px solid black;
   margin: 9px;
-  font-family: 'Laila';
-
-
+  font-family: "Laila";
 }
-form > #post{
-  padding:10px;
+form > #post {
+  padding: 10px;
 }
-#Blogs{
+#Blogs {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-form > #title::placeholder{
+form > #title::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
-  font-family: 'Laila';
-
+  font-family: "Laila";
 }
 
-textarea{
+textarea {
   width: 70vw;
   height: 70vh;
   padding: 10px;
-  border:1.5px solid black;
-  font-family: 'Laila';
-
+  border: 1.5px solid black;
+  font-family: "Laila";
 }
 
-textarea::placeholder{
+textarea::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
   padding-top: 10px;
-  font-family: 'Laila';
+  font-family: "Laila";
+}
+center {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .App {
   text-align: center;
-}
-center {
-  padding:18px;
 }
 
 .App-header {
@@ -99,20 +96,14 @@ center {
 .body {
   margin: 0;
   padding: 0;
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:url(./images/f.jpg);
 }
-.main {
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-#content{
+
+#content {
   height: 30vh;
   padding: 20px;
   font-size: 25px;
@@ -122,79 +113,68 @@ center {
   padding: 20px;
   font-size: 40px;
   font-weight: 500;
-
 }
 
-.link:hover{
+.link:hover {
   text-decoration: none;
   font-size: 1.6em;
-  font-family: 'Kalam';
+  font-family: "Kalam";
 }
-.link{
+.link {
   text-decoration: none;
   font-size: 1.6em;
-  font-family: 'Kalam';
+  font-family: "Kalam";
 }
 
-.linkname{
+.linkname {
   text-decoration: none;
   color: #f2f2f2;
   padding: 30px;
   font-size: 3.5em;
-  font-family: 'Dancing Script';
-
+  font-family: "Dancing Script";
 }
-.linkname:hover{
+.linkname:hover {
   text-decoration: none;
   color: #f2f2f2;
   padding: 30px;
   font-size: 3.5rem;
-  font-family: 'Dancing Script';
-
+  font-family: "Dancing Script";
 }
 
-#Button{
+#Button {
   border: 1px solid black;
 }
 
-.bloglinkname{
+.bloglinkname {
   text-decoration: none;
   padding: 12px;
   font-size: 1.8em;
   color: black;
-  font-family: 'Courgette';
-
+  font-family: "Courgette";
 }
 
-.bloglinkname:hover{
-  text-decoration: none ;
+.bloglinkname:hover {
+  text-decoration: none;
   padding: 12px;
-  font-size: 1.em;
+  font-size: 1.8em;
   color: black;
+}
+.carousel {
+  width: 100% !important;
+  height: 80vh;
+  margin: 0 auto;
+  background-image: url(./images/fool.jpg);
+}
 
+.item {
+  padding-top: 50px;
+  width: 100%;
 }
-.master {
-  width: 500%;
-  height: 500px;
-  display: flex;
-}
-.master input {
-  display: none;
-}
-.slide {
-  width: 20%;
-  transition: 2s;
-}
-.slide img {
+
+.item > img {
+  border-radius: 10px;
   width: 800px;
   height: 500px;
-}
-.navigation-manual {
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
 }
 
 .manual-btn {
@@ -228,67 +208,12 @@ center {
 #r5:checked ~ .first {
   margin-left: -80%;
 }
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 460px;
-}
-.navigation-auto div {
-  border: 2px solid aqua;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-.navigation-auto div:not(:last-child) {
-  margin-right: 40px;
-}
-
-#r1:checked ~ .navigation-auto .auto-btn1 {
-  background: aqua;
-}
-#r2:checked ~ .navigation-auto .auto-btn2 {
-  background: aqua;
-}
-#r3:checked ~ .navigation-auto .auto-btn3 {
-  background: aqua;
-}
-#r4:checked ~ .navigation-auto .auto-btn4 {
-  background: aqua;
-}
-#r5:checked ~ .navigation-auto .auto-btn5 {
-  background: aqua;
-}
 .body3 {
   width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
-}
-.body2 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  box-sizing: border-box;
-  background: #fff;
-  border-bottom: 1px solid #dfdfdf;
-}
-.body4 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 25vh;
-  margin-right: 25vh;
-  width: 100% !important;
-  background: #fff;
-  border-bottom: 1px solid #dfdfdf;
 }
 Link:hover {
   text-decoration: none;
@@ -299,29 +224,28 @@ Link:hover {
 
 .Jumbotron {
   /* padding: 40px; */
-  background-image:url(./images/info1.jpg);
+  background-image: url(./images/info1.jpg);
 }
 
 .Jumbotron1 {
-  width: 100vw ;
+  width: 100%;
   padding: 40px;
   background-color: #282c34;
 }
 
 .Jumbotron h1 {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
   text-align: center;
   padding: 30px;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 400;
-  font-family: 'Baskerville';
+  font-family: "Tangerine";
 }
 
 .Jumbotron p {
   text-align: center;
   font-size: 30px;
   font-weight: 200;
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   padding: 50px 50px 50px 50px;
 }
 
@@ -331,11 +255,11 @@ Link:hover {
   font-weight: 100;
   padding: 30px;
   color: #f2f2f2;
-  font-family: 'Architects Daughter';
+  font-family: "Architects Daughter";
 }
-.rule{
-  width: 58vw;
-border: 0.5px solid grey;
+.rule {
+  width: 65vw;
+  border: 0.5px solid grey;
 }
 .container {
   margin: 0;

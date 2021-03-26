@@ -1,30 +1,74 @@
-import { useState } from 'react'
+import axios from "axios";
+import { useState } from "react";
+import { useHistory } from "react-router";
+import { config } from "../../config";
 
 const BlogCreator = () => {
+	const [title, setTitle] = useState("");
+	const [author, setAuthor] = useState("");
+	const [content, setContent] = useState("");
 
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
+	const history = useHistory();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const blog = { title: title, content: content };
-        console.log(blog);
-        // Send the object 'blog' to backend
-    }
-    return (
-        <div>
-            <center>
-                <form onSubmit={handleSubmit}>
-                    <input id="title" type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} placeholder='Blog Title' />
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		const blog = { title, author, content };
 
-                    <input id="post" type="submit" value='POST' />
-                    <br />
-                    <br />
-                    <textarea value={content} onChange={(e) => { setContent(e.target.value) }} rows='20' cols='200' placeholder='Blog Content'>CONTENT</textarea>
-                </form>
-            </center>
-        </div>
-    )
-}
+		axios({
+			method: "POST",
+			url: `${config.backendUrl}/post`,
+			headers: {
+				"Content-Type": "application/json",
+			},
+			data: blog,
+		}).then(() => {
+			setTitle("");
+			setContent("");
+			setAuthor("");
+			history.push("/blogs");
+		});
+	};
 
-export default BlogCreator
+	return (
+		<div>
+			<center>
+				<form onSubmit={handleSubmit}>
+					<input
+						id="title"
+						type="text"
+						value={title}
+						onChange={(e) => {
+							setTitle(e.target.value);
+						}}
+						placeholder="Blog Title"
+					/>
+
+					<input
+						type="text"
+						value={author}
+						onChange={(e) => {
+							setAuthor(e.target.value);
+						}}
+					/>
+
+					<input id="post" type="submit" value="POST" />
+					<br />
+					<br />
+					<textarea
+						value={content}
+						onChange={(e) => {
+							setContent(e.target.value);
+						}}
+						rows="20"
+						cols="200"
+						placeholder="Blog Content"
+					>
+						CONTENT
+					</textarea>
+				</form>
+			</center>
+		</div>
+	);
+};
+
+export default BlogCreator;

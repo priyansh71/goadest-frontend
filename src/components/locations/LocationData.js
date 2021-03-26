@@ -1,12 +1,11 @@
 import React from 'react'
 import Styles from './Location.module.css'
+import getDistfromCoords from '../../getdistance'
 
-function LocationData({placename, address, description, typeofplace, latitude, longitude}) {
+function LocationData({ placename, address, description, typeofplace, latitude, longitude }) {
 
-    const distance = () => {
+    const distance = Math.trunc(getDistfromCoords(latitude.$numberDecimal, longitude.$numberDecimal))
 
-    }; // calculate distance
-    
     return (
         <div className={Styles.cell}>
 
@@ -31,10 +30,9 @@ function LocationData({placename, address, description, typeofplace, latitude, l
                 width="150" 
                 height="150" 
                 scrolling="yes"
-                title={placename} 
-                >
+            >
             </iframe>
-            
+
         </div>
     )
 }

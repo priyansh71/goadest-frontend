@@ -1,21 +1,38 @@
-const BlogViewer = () => {
-    const url = window.location.href;
-    const loc = url.indexOf('readblogs/')
-    const id = url.substring(loc + 10);
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { config } from "../../config";
 
-    // Get blog by id from backend
-    const blog = { title: "Blog-1", content: 'This is a blog' }; //fetch(url) from backend
-    return (
-        <div>
-            <center>
-                <hr className="ruler" />
-                <div id="head">{blog.title}</div>
-                <br />
-                <hr className="ruler" />
-                <div id="content">{blog.content}</div>
-            </center>
-        </div>
-    )
-}
+const BlogViewer = ({ id }) => {
+	const [blog, setBlog] = useState(null);
 
-export default BlogViewer
+	const callFn = () => {
+		axios
+			.get(`${config.backendUrl}/post/${id}`)
+			.then((res) => {
+				setBlog(res.data);
+				console.log(res.data);
+			})
+			.catch((e) => {
+				console.log(e.message);
+			});
+	};
+
+	useEffect(() => {
+		callFn();
+	}, []);
+
+	return (
+		<div>
+			<center className="blogCenter">
+				<hr className="ruler" />
+				<div id="head">{blog && blog.title}</div>
+				<br />
+				<div>{blog && blog.author}</div>
+				<hr className="ruler" />
+				<div id="content">{blog && blog.content}</div>
+			</center>
+		</div>
+	);
+};
+
+export default BlogViewer;
