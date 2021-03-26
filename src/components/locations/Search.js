@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { config } from "../../config";
 import styles from "./Location.module.css";
 import LocationData from "./LocationData";
 
