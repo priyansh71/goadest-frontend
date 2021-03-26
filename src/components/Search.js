@@ -11,7 +11,7 @@ const Search = ({ value, onChange }) => {
 		e.preventDefault();
 
 		axios({
-			url: `${config.backendUrl}/post`,
+			url: `${config.backendUrl}/search`,
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
