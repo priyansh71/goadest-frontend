@@ -4,6 +4,7 @@ import BlogViewer from "./BlogViewer";
 import BlogCreator from "./BlogCreator";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
 
 const Blog = () => {
 
@@ -38,11 +39,11 @@ const Blog = () => {
                 <div>
                     <hr className="rule" />
                     <center>
-                        <button variant="dark">
+                        <Button variant="dark">
                             <Link className="linkname" to='/blogs/createblog'>
                                 <span >Create a Blog </span>
                             </Link>
-                        </button>
+                        </Button>
 
                     </center>
 

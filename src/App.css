@@ -81,10 +81,8 @@ center {
 .App {
   text-align: center;
 }
-<<<<<<< HEAD center {
-  padding: 18px;
-}
-=======>>>>>>>c8ab21f245104cdf3dbf4942ec1e442e2d50915f .App-header {
+
+.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -117,13 +115,12 @@ center {
   font-weight: 500;
 }
 
-.link {
+.link:hover {
   text-decoration: none;
   font-size: 1.6em;
   font-family: "Kalam";
 }
-
-.link:hover {
+.link {
   text-decoration: none;
   font-size: 1.6em;
   font-family: "Kalam";
@@ -163,7 +160,7 @@ center {
   color: black;
 }
 .carousel {
-  width: 100vw !important;
+  width: 100% !important;
   height: 80vh;
   margin: 0 auto;
   background-image: url(./images/fool.jpg);
@@ -171,7 +168,7 @@ center {
 
 .item {
   padding-top: 50px;
-  width: 100vw;
+  width: 100%;
 }
 
 .item > img {
@@ -231,7 +228,7 @@ Link:hover {
 }
 
 .Jumbotron1 {
-  width: 100vw;
+  width: 100%;
   padding: 40px;
   background-color: #282c34;
 }
