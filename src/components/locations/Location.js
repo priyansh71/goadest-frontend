@@ -6,6 +6,7 @@ import axios from "axios";
 import Search from "./Search";
 import Styles from "./Location.module.css";
 import { config } from "../../config";
+import { Col, Container, Jumbotron, Row } from "react-bootstrap";
 
 const Location = () => {
 	const [distance, setDistance] = useState(10);
@@ -86,21 +87,35 @@ const Location = () => {
 	];
 
 	return (
-		<div className={Styles.locationContainer}>
-			<div className={Styles.searchHolder}>
-				<Search value={searchValue} onChange={handleSearchChange} />
-			</div>
-			<section className={Styles.container}>
-				<div className={Styles.main}>
-					<MainSection locations={locations} />
+		<div>
+			<center>
+				<div className={Styles.searchHolder}>
+					<Search value={searchValue} onChange={handleSearchChange} />
 				</div>
-				<div className={Styles.filters}>
-					<h4>Filters</h4>
-					<RadiusFilter onChange={handleChange_distance} distance={distance} />
-					<OptionFilter onChange={handleChange_option} option={option} />
+				<div id="heading">
+					Filters
 				</div>
-			</section>
+			</center>
+
+			<Container fluid>
+				<Row>
+					<Col>
+						<RadiusFilter onChange={handleChange_distance} distance={distance} />
+					</Col>
+					<Col>
+						<OptionFilter onChange={handleChange_option} option={option} />
+					</Col>
+				</Row>
+			</Container>
+			<Container fluid>
+				<Row>
+					<center >
+						<MainSection locations={locations} />
+					</center>
+				</Row>
+			</Container>
 		</div>
+
 	);
 };
 
