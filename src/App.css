@@ -64,7 +64,6 @@ form > #post {
   align-items: center;
   justify-content: center;
 }
-
 form > #title::placeholder {
   text-align: center;
   padding-left: auto;
