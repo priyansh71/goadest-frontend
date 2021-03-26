@@ -4,7 +4,6 @@ const Search = ({value, onChange}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Submitting: ${value}`)
         // Probably not needed. Will need to check performance and decide accordingly
     }
 
