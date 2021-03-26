@@ -1,5 +1,5 @@
 import { Col, Container, Jumbotron, Row } from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -11,22 +11,19 @@ const Footer = () => {
                 <Container fluid>
                     <Row>
                         <Col>
-                            <Link to='/about'>About</Link>
+                            <Link className="footerlink" to='/about'>About</Link>
                         </Col>
                         <Col>
-                            <Link to='/Contact-Us'>Contact Us</Link>
+                            <Link className="footerlink" to='/Contact-Us'>Contact Us</Link>
                         </Col>
                         <Col>
-                            <Link to='Help-and-Support'>Help and Support</Link>
+                            <Link className="footerlink" to='Help-and-Support'>Help and Support</Link>
                         </Col>
                     </Row>
                 </Container>
             </Jumbotron>
         </div>
-
     )
 }
 
 export default Footer
-
-
