@@ -42,6 +42,7 @@ const Search = ({ value, onChange }) => {
 					typeofplace={location.typeofplace}
 					latitude={location.latitude}
 					longitude={location.longitude}
+					image={location.imageurl}
 				/>
 			)}
 		</div>
