@@ -1,3 +1,5 @@
+import { Col, Container, Row } from "react-bootstrap";
+
 const BlogViewer = () => {
     const url = window.location.href;
     const loc = url.indexOf('readblogs/')
@@ -12,7 +14,7 @@ const BlogViewer = () => {
                 <div id="head">{blog.title}</div>
                 <br />
                 <hr className="ruler" />
-                <div id="content">{blog.content}</div>
+                <textarea id="display">{blog.content}</textarea>
             </center>
         </div>
     )

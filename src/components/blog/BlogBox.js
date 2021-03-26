@@ -8,7 +8,7 @@ function BlogBox({ title, address }) {
         <center>
             <Button variant="light" id="Button">
                 <Link className="bloglinkname" to={'/blogs/readblogs/' + address}>
-                    <span>{title}</span>
+                    <span id="blogbox">{title}</span>
                 </Link>
             </Button>
             <br />

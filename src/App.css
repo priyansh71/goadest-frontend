@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Laila");
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Bellefair");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
 
 .brand{
   font-size: 4em;
@@ -39,7 +40,7 @@ form > #title{
   padding: 10px;
   border:1px solid black;
   margin: 9px;
-  font-family: 'Laila';
+  font-family: 'Quicksand';
 
 
 }
@@ -57,26 +58,30 @@ form > #title::placeholder{
   text-align: center;
   padding-left: auto;
   padding-right: auto;
-  font-family: 'Laila';
+  font-family: 'Quicksand';
 
 }
+#blogbox{
+  flex-direction: column;
+}
 
-textarea{
+#create{
   width: 70vw;
   height: 70vh;
   padding: 10px;
   border:1.5px solid black;
-  font-family: 'Laila';
+  font-family: 'Quicksand';
 
 }
 
-textarea::placeholder{
+#create::placeholder{
   text-align: center;
   padding-left: auto;
   padding-right: auto;
   padding-top: 10px;
-  font-family: 'Laila';
+  font-family: 'Quicksand';
 }
+
 center {
   padding-top: 10px;
   padding-bottom:10px;
@@ -108,6 +113,7 @@ center {
 }
 
 #content{
+  max-width: 100% !important;
   height: 30vh;
   padding: 20px;
   font-size: 25px;
@@ -117,8 +123,8 @@ center {
   padding: 20px;
   font-size: 40px;
   font-weight: 500;
-
 }
+
 
 .link:hover{
   text-decoration: none;
@@ -169,7 +175,7 @@ center {
 
 }
 .carousel{
-  width:100vw !important;
+  width:100% !important;
 height: 80vh;
   margin: 0 auto;
   background-image:url(./images/fool.jpg);
@@ -177,7 +183,7 @@ height: 80vh;
 
 .item{
   padding-top:50px;
-  width:100vw;
+  width:100%;
  }
 
 .item > img{
@@ -187,37 +193,6 @@ height: 80vh;
 
 }
 
-.manual-btn {
-  border: 2px solid #61ece1;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-.manual-btn:not(:last-child) {
-  margin-right: 40px;
-}
-
-#r1:checked ~ .first {
-  margin-left: 0;
-  background: aqua;
-}
-
-#r2:checked ~ .first {
-  margin-left: -20%;
-}
-
-#r3:checked ~ .first {
-  margin-left: -40%;
-}
-
-#r4:checked ~ .first {
-  margin-left: -60%;
-}
-
-#r5:checked ~ .first {
-  margin-left: -80%;
-}
 .body3 {
   width: fit-content;
   display: flex;
@@ -236,9 +211,18 @@ Link:hover {
   /* padding: 40px; */
   background-image:url(./images/info1.jpg);
 }
+#display{
+  width: 70vw;
+  height: 70vh;
+  padding: 20px;
+  font-size: 20px;
+  border: 0.5px solid rgb(236, 236, 236);
+  font-family: 'Quicksand';
+
+}
 
 .Jumbotron1 {
-  width: 100vw ;
+  width: 100%;
   padding: 40px;
   background-color: #282c34;
 }
