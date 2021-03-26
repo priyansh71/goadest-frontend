@@ -4,71 +4,76 @@ import { useHistory } from "react-router";
 import { config } from "../../config";
 
 const BlogCreator = () => {
-	const [title, setTitle] = useState("");
-	const [author, setAuthor] = useState("");
-	const [content, setContent] = useState("");
+    const [title, setTitle] = useState("");
+    const [author, setAuthor] = useState("");
+    const [content, setContent] = useState("");
 
-	const history = useHistory();
+    const history = useHistory();
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		const blog = { title, author, content };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const blog = { title, author, content };
 
-		axios({
-			method: "POST",
-			url: `${config.backendUrl}/post`,
-			headers: {
-				"Content-Type": "application/json",
-			},
-			data: blog,
-		}).then(() => {
-			setTitle("");
-			setContent("");
-			setAuthor("");
-			history.push("/blogs");
-		});
-	};
+        axios({
+            method: "POST",
+            url: `${config.backendUrl}/post`,
+            headers: {
+                "Content-Type": "application/json",
+            },
+            data: blog,
+        }).then(() => {
+            setTitle("");
+            setContent("");
+            setAuthor("");
+            history.push("/blogs");
+        });
+    };
 
-	return (
-		<div>
-			<center>
-				<form onSubmit={handleSubmit}>
-					<input
-						id="title"
-						type="text"
-						value={title}
-						onChange={(e) => {
-							setTitle(e.target.value);
-						}}
-						placeholder="Blog Title"
-					/>
+    return (
+        <div>
+            <center>
+                <form onSubmit={handleSubmit}>
+                    <input
+                        id="title"
+                        type="text"
+                        value={title}
+                        onChange={(e) => {
+                            setTitle(e.target.value);
+                        }}
+                        placeholder="Blog Title"
+                    />
+                    <br />
 
-					<input
-						type="text"
-						value={author}
-						onChange={(e) => {
-							setAuthor(e.target.value);
-						}}
-					/>
+                    <input
+                        id="author"
+                        type="text"
+                        value={author}
+                        onChange={(e) => {
+                            setAuthor(e.target.value);
+                        }}
+                        placeholder="Blog author"
+                    />
 
-					<input id="post" type="submit" value="POST" />
-					<br />
-					<br />
-					<textarea
-						value={content}
-						onChange={(e) => {
-							setContent(e.target.value);
-						}}
-						rows="20"
-						cols="200"
-						placeholder="Blog Content"
-					>
-						CONTENT
-					</textarea>
-				</form>
-			</center>
-		</div>
-	);
+                    <br />
+
+                    <input id="post" type="submit" value="POST" />
+                    <br />
+                    <br />
+                    <textarea
+                        id="contentCreate"
+                        value={content}
+                        onChange={(e) => {
+                            setContent(e.target.value);
+                        }}
+                        rows="20"
+                        cols="200"
+                        placeholder="Blog Content"
+                    >
+                    </textarea>
+                </form>
+            </center>
+        </div>
+    );
 };
 
 export default BlogCreator;
