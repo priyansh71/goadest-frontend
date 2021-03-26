@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import styles from './Location.module.css'
 import LocationData from './LocationData';
+import config from '../../config'
 
 const Search = ({ value, onChange }) => {
 
