@@ -56,6 +56,8 @@ label {
     border: thin solid black;
     border-radius: 20px 80px 20px;
 
+    margin-bottom: 2em;
+
 }
 .imgContainer {
     padding-right: 1em;

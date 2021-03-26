@@ -11,7 +11,7 @@ const MainSection = ({ locations }) => {
                             address={location.address}
                             description={location.description}
                             typeofplace={location.typeofplace}
-                            image={location.image}
+                            image={location.imageurl}
                             latitude={location.latitude}
                             longitude={location.longitude}
                         />
