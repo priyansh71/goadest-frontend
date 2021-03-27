@@ -1,5 +1,6 @@
-import { Col, Container, Jumbotron, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Col, Container, Jumbotron, Nav, Row } from 'react-bootstrap'
+import { Link, Switch, Route } from 'react-router-dom'
+import Blog from './blog/Blog'
 
 const Footer = () => {
     return (
@@ -11,14 +12,11 @@ const Footer = () => {
                 <Container fluid>
                     <Row>
                         <Col>
-                            <Link className="footerlink" to='/about'>About</Link>
+                            <a className="footerlink" href="/blogs">
+                                About the creators
+                            </a>
                         </Col>
-                        <Col>
-                            <Link className="footerlink" to='/Contact-Us'>Contact Us</Link>
-                        </Col>
-                        <Col>
-                            <Link className="footerlink" to='Help-and-Support'>Help and Support</Link>
-                        </Col>
+
                     </Row>
                 </Container>
             </Jumbotron>

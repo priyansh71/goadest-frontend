@@ -74,6 +74,7 @@ form > #title::placeholder {
 .footerlink{
   font-size: 30px;
   color: whitesmoke;
+  font-family: 'Quicksand';
 
 }
 .footerlink:hover{
@@ -128,8 +129,9 @@ center {
   text-align: center;
 }
 #heading{
-  font-family: 'Kalam';
+  font-family: 'Quicksand';
   font-size: 4em;
+  margin: 30px;
 }
 .cover{
   margin: 20px;
@@ -334,7 +336,7 @@ Link:hover {
 }
 .rule {
   width: 65vw;
-  border: 0.5px solid grey;
+  border: 1px thin rgb(141, 141, 141);
 }
 .container {
   margin: 0;

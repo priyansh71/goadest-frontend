@@ -87,16 +87,18 @@ const Location = () => {
 	];
 
 	return (
-		<div>
+		<div id={Styles.maindiv}>
+
 			<center>
+				<hr className="rule" />
 				<div className={Styles.searchHolder}>
 					<Search value={searchValue} onChange={handleSearchChange} />
 				</div>
+				<hr className="rule" />
 				<div id="heading">
 					Filters
 				</div>
 			</center>
-
 			<Container fluid>
 				<Row>
 					<Col>
@@ -107,11 +109,13 @@ const Location = () => {
 					</Col>
 				</Row>
 			</Container>
+			<hr className="rule" />
+			<br />
+			<br />
+			<br />
 			<Container fluid>
 				<Row>
-					<center >
-						<MainSection locations={locations} />
-					</center>
+					<MainSection locations={locations} />
 				</Row>
 			</Container>
 		</div>
