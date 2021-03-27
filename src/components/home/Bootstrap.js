@@ -27,7 +27,9 @@ const Bootstrap = () => {
 			<hr className="rule" />
 			<br />
 			<center>
-				<Carousel fade className="carousel">
+
+				<Carousel className="carousel">
+
 					<Carousel.Item className="item">
 						<img
 							src={a}
@@ -60,6 +62,7 @@ const Bootstrap = () => {
 					</Carousel.Item>
 				</Carousel>
 			</center>
+
 		</div >
 	);
 };

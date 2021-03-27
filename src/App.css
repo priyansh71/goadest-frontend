@@ -17,8 +17,8 @@
   border-bottom: 2px solid #bdbbbb;
 }
 .ruler{
-  width: 65vw;
-  border: 0.1px solid #181e20;
+  width: 75vw;
+  border: 2px thin #181e20;
 }
 .mr-auto {
   text-align: right;
@@ -72,15 +72,17 @@ form > #title::placeholder {
 
 }
 .footerlink{
-  font-size: 30px;
+  font-size: 3.5em;
   color: whitesmoke;
+  font-family: 'Satisfy';
+  text-decoration: none;
 
 }
 .footerlink:hover{
-  text-decoration: none;
-  font-size: 30px;
+  font-size: 3.5em;
   color: whitesmoke;
-
+  font-family: 'Satisfy';
+  text-decoration: none;
 
 }
 .blogbuttons{
@@ -128,7 +130,9 @@ center {
   text-align: center;
 }
 #heading{
-  font-family: 'Kalam';
+  font-family: 'Quicksand';
+  padding: 20px;
+  margin: 10px;
   font-size: 4em;
 }
 .cover{
@@ -165,6 +169,9 @@ center {
   padding: 15px;
   margin: 20px;
   overflow-wrap:break-word ;
+  white-space: pre-line;
+  text-align: left;
+  
 }
 #head {
   font-size: 40px;
@@ -206,7 +213,7 @@ center {
 
 #Button {
   border: 1px solid black;
-  padding: 10px;
+  padding: 20px;
   width: 80%;
 }
 #contentCreate {
@@ -260,21 +267,23 @@ center {
   overflow-wrap:break-word ;
 }
 .carousel {
-  width: 100% !important;
-  height: 80vh;
-  margin: 0 auto;
   background-image: url(./images/fool.jpg);
 }
 
 .item {
-  padding-top: 50px;
-  width: 100%;
+  width:100%;
+  max-width: 80%;
+  height: 100%;
+  margin: unset;
+  float: unset;
+  padding: 10px;
 }
 
 .item > img {
   border-radius: 10px;
-  width: 800px;
-  height: 500px;
+  width: 80%;
+  height: 50%;
+  margin : auto;
 }
 
 .body3 {

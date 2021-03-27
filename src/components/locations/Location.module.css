@@ -7,7 +7,7 @@
     font-size: 22px;
 }
 .map{
-    width: 80vh;
+    width: 70%;
     border: 1px solid bisque;
 }
 .filters h4 {
@@ -16,9 +16,8 @@
     font-family: 'Satisfy';
 }
 .search {
-    width: 1000px;
+    width: 60vw;
     flex-grow: 1;
-    max-width: 1500px;
 }
 .searchHolder {
     display: flex;
@@ -28,6 +27,9 @@
 .options {
     display: flex;
     flex-direction: column;
+    padding: 20px 70px 40px 90px;
+    border-left: 1px solid #414141;
+
 }
 #heading{
     font-family: 'Kalam';
@@ -48,8 +50,7 @@ label {
     font-size: 20px;
 }
 .filter{
-    padding: 30px;
-    margin: 20px;
+    padding: 20px 5px 40px 10px;
 }
 .slider{
     color: #16092e;
@@ -58,16 +59,15 @@ label {
 }
 
 .cell {
-    background-color: rgb(194, 227, 238);
-
+    background-color: rgb(236, 249, 253);
     display: flex;
     flex-direction: row;
-
     padding: 2em;
-    width: 95%;
+    width: 80%;
     border: thin solid black;
     border-radius: 20px 80px 20px;
-
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2em;
 
 }
@@ -82,9 +82,9 @@ label {
     font-family: 'Courgette';
 }
 .img {
-    width: 70vw;
-    border-radius: 15px;
-    border: 1px solid grey;
+    width: 95%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
 }
 .button {
     height: 50px;

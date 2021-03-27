@@ -92,9 +92,12 @@ const Location = () => {
 				<div className={Styles.searchHolder}>
 					<Search value={searchValue} onChange={handleSearchChange} />
 				</div>
+				<hr />
 				<div id="heading">
 					Filters
 				</div>
+				<hr className="rule" />
+
 			</center>
 
 			<Container fluid>
@@ -107,6 +110,9 @@ const Location = () => {
 					</Col>
 				</Row>
 			</Container>
+			<br />
+			<br />
+			<hr className="rule" />
 			<Container fluid>
 				<Row>
 					<center >
