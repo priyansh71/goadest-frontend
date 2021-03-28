@@ -31,9 +31,7 @@ const Search = ({ value, onChange }) => {
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
-				<input className={styles.search} type="text" value={value} onChange={onChange} />
-				<br />
-				<br />
+				<input className={styles.search} type="text" value={value} onChange={onChange} placeholder="Search here" />
 				<input id="button" type="submit" value="Submit" />
 			</form>
 			{location && (

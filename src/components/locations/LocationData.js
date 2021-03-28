@@ -11,13 +11,8 @@ function LocationData({ placename, address, description, typeofplace, image, lat
         <div className={Styles.cell}>
 
             <center className={Styles.textContainer}>
-                <h2>{placename}</h2>
+                <div id="placename">{placename}</div>
                 <hr />
-                <p>{description}</p>
-                <p>Type of location: {typeofplace}</p>
-                <p>Distance from campus: {distance} kms</p>
-                <p>Address: {address}</p>
-
                 <br />
                 <center>
                     <Container fluid>
@@ -29,7 +24,12 @@ function LocationData({ placename, address, description, typeofplace, image, lat
                         </Row>
                     </Container>
                 </center>
-
+                <br />
+                <hr />
+                <p className="type">{description}</p>
+                <p className="type"><span>Type of Location:- </span>{typeofplace}</p>
+                <p className="type"><span>Distance from Campus:- </span>{distance} kilometers</p>
+                <p className="type"><span>Address:- </span>{address}</p>
 
                 <br />
 

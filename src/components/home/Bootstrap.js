@@ -16,10 +16,10 @@ const Bootstrap = () => {
 				<h1>Your dream holiday destination.</h1>
 				<p>
 					Famed to be paradise on earth, Goa has the right mix of everything that a tourist
-					destination has to offer.It is beautiful because of
+					destination has to offer. It is beautiful because of
 					its unbeatable greenery oozing out of the dense palm cover even at the most popular
-					stretches of beaches. The glimpse of peaceful life of the fisherman villages, the exciting
-					water sports activities of scuba diving, boat rides, water skiing, cruising, surfing,
+					stretches of beaches, while the glimpse of peaceful life of the fisherman villages, the exciting
+					water sports activities of scuba diving, water skiing, cruising, surfing,
 					along with the peace of the sunset beach
 					is enough to satisfy every adventure lover’s heart.
 						</p>

@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Bellefair");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Dosis");
 
 .brand {
   font-size: 4em;
@@ -26,8 +27,8 @@
   text-decoration: none;
 }
 form {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-right: auto;
   padding-left: auto;
   margin: auto;
@@ -113,6 +114,19 @@ form > #author::placeholder {
   font-family: 'Quicksand';
 
 }
+#placename{
+  font-size: 3.5em;
+  font-family: 'Bellefair';
+}
+
+.type{
+  font-size: 1.5em;
+  padding: 5px;
+
+}
+.type > span{
+  font-weight: 500;
+}
 
 #create::placeholder{
   text-align: center;
@@ -121,9 +135,13 @@ form > #author::placeholder {
   padding-top: 10px;
   font-family: 'Quicksand';
 }
+.options{
+  max-width: 80%;
+  width: 80%;
+}
 
 center {
-  padding:20px;
+  padding:17px;
 }
 
 .App {
@@ -131,9 +149,8 @@ center {
 }
 #heading{
   font-family: 'Quicksand';
-  padding: 20px;
-  margin: 10px;
-  font-size: 4em;
+  padding: 10px;
+  font-size: 3em;
 }
 .cover{
   margin: 20px;
@@ -320,9 +337,9 @@ Link:hover {
 .Jumbotron h1 {
   text-align: center;
   padding: 30px;
-  font-size: 100px;
-  font-weight: 400;
-  font-family: "Tangerine";
+  font-size: 80px;
+  font-weight: 100;
+  font-family: "Dosis";
 }
 
 .Jumbotron p {

@@ -17,7 +17,9 @@
 }
 .search {
     width: 60vw;
-    flex-grow: 1;
+    margin: 4px;
+    padding: 0px 7px;
+    
 }
 .searchHolder {
     display: flex;
@@ -27,7 +29,7 @@
 .options {
     display: flex;
     flex-direction: column;
-    padding: 20px 70px 40px 90px;
+    padding: 20px 10px 20px 50px;
     border-left: 1px solid #414141;
 
 }
@@ -37,9 +39,9 @@
     color: azure;
 }
 label {
-    padding: 1em;
+    padding: 0.5em;
     font-family: 'Quicksand';
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .textbox {
@@ -59,7 +61,7 @@ label {
 }
 
 .cell {
-    background-color: rgb(236, 249, 253);
+    background-color: rgb(247, 253, 255);
     display: flex;
     flex-direction: row;
     padding: 2em;
@@ -71,19 +73,16 @@ label {
     margin-bottom: 2em;
 
 }
-.textContainer {
+/* .textContainer {
     font-size: 22px;
     font-family: 'Kalam';
     margin: 30px;
     padding: 20px;
-}
-.textContainer h2 {
-    font-size: 60px;
-    font-family: 'Courgette';
-}
+} */
+
 .img {
     width: 95%;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px thin rgb(44, 44, 44);
     margin: auto;
 }
 .button {
