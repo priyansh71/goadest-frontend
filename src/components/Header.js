@@ -7,7 +7,7 @@ import Blog from './blog/Blog'
 const Header = () => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" expand="lg" id="navbar">
+      <Navbar variant="light" expand="lg" id="navbar">
         <Link to="/">
           <Navbar.Brand className="brand">GoaDest</Navbar.Brand>
         </Link>

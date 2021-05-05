@@ -15,7 +15,8 @@
   padding: 15px;
 }
 #navbar {
-  border-bottom: 2px solid #bdbbbb;
+  border-bottom: 2px solid #b3b3b3;
+  background-color: #e9ecef;
 }
 .ruler{
   width: 75vw;
@@ -74,18 +75,18 @@ form > #title::placeholder {
 }
 .footerlink{
   font-size: 3.5em;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   font-family: 'Satisfy';
   text-decoration: none;
 
 }
 .footerlink:hover{
   font-size: 3.5em;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   font-family: 'Satisfy';
   text-decoration: none;
-
 }
+
 .blogbuttons{
   display: flex;
   flex-direction: row;
@@ -215,17 +216,18 @@ center {
 
 .linkname {
   text-decoration: none;
-  color: #f2f2f2;
   padding: 30px;
   font-size: 3.5em;
   font-family: "Dancing Script";
+  color: white;
+
 }
 .linkname:hover {
   text-decoration: none;
-  color: #f2f2f2;
   padding: 30px;
   font-size: 3.5rem;
   font-family: "Dancing Script";
+  color: white;
 }
 
 #Button {
@@ -315,7 +317,6 @@ Link:hover {
 }
 
 .Jumbotron {
-  /* padding: 40px; */
   background-image: url(./images/info1.jpg);
 }
 #display{
@@ -331,7 +332,6 @@ Link:hover {
 .Jumbotron1 {
   width: 100%;
   padding: 40px;
-  background-color: #282c34;
 }
 
 .Jumbotron h1 {
@@ -344,10 +344,12 @@ Link:hover {
 
 .Jumbotron p {
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 200;
   font-family: "Bellefair";
   padding: 50px 50px 50px 50px;
+  color: black;
+  text-shadow: black;
 }
 
 .Jumbotron1 p {

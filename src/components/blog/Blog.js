@@ -49,7 +49,7 @@ const Blog = () => {
                         })}
                 </div>
             </Router>
-        </div>
+        </div >
     );
 };
 
