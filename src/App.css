@@ -287,6 +287,7 @@ center {
 }
 .carousel {
   background-image: url(./images/fool.jpg);
+  width: 100%;
 }
 
 .item {
@@ -295,7 +296,8 @@ center {
   height: 80%;
   margin: unset;
   float: unset;
-  padding: 10px;
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
 
 .item > img {
