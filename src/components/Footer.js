@@ -21,7 +21,9 @@ const Footer = () => {
             <Jumbotron className="Jumbotron1">
                 <Container fluid>
                     <Col className="footerlink">
-                        About the creators
+                        <a href='/blogs/readblogs/605f1b37ca55900015029d2d'>
+                            About the creators
+                        </a> 
                     </Col>
                 </Container>
             </Jumbotron>
