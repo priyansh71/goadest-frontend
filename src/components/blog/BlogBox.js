@@ -28,7 +28,7 @@ function BlogBox({ title, address, author }) {
 
 
             <Route path={`/blogs/readblogs/${address}`} >
-                {showBlog && <BlogViewer id={address} />}
+                {/*showBlog && */<BlogViewer id={address} />}
             </Route>
 
             <br />
