@@ -4,6 +4,7 @@ const OptionFilter = ({ onChange, option }) => {
 
     return (
         <div className={styles.options}>
+            <label>Type of Location:</label>
             <div className="options">
                 <input type='radio' name='options' id='beach' value='beach' onChange={onChange} checked={option === 'beach'} />
                 <span><label for='beach'>Beach</label></span>

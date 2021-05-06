@@ -7,8 +7,8 @@
     font-size: 22px;
 }
 .map{
-    width: 70%;
-    border: 1px solid bisque;
+    width: 80%;
+    border: 1px solid rgb(114, 109, 109);
 }
 .filters h4 {
     text-align: center;
@@ -64,28 +64,18 @@ label {
     background-color: rgb(248, 252, 255);
     display: flex;
     flex-direction: row;
-    padding: 2em;
-    width: 80%;
+    padding: 1em;
+    width: 85%;
     border: thin solid black;
     border-radius: 20px 80px 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-
 }
-/* .textContainer {
-    font-size: 22px;
-    font-family: 'Kalam';
-    margin: 30px;
-    padding: 20px;
-} */
 
 .img {
-    width: 95%;
+    width:95%;
     border: 1px thin rgb(44, 44, 44);
-    margin: auto;
 }
 .button {
     height: 50px;

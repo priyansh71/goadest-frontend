@@ -21,15 +21,13 @@ const Bootstrap = () => {
 				</p>
 			</Jumbotron>
 			<hr className="rule" />
-			<br />
-			<center>
+			<div>
 
 				<Carousel fade interval={3000} pauseOnHover={true} keyboard={true} className="carousel">
-
 					<Carousel.Item className="item">
 						<img
 							d-inline
-							src={a}
+							src={e}
 							alt="First slide"
 						/>
 					</Carousel.Item>
@@ -53,12 +51,12 @@ const Bootstrap = () => {
 					</Carousel.Item>
 					<Carousel.Item className="item">
 						<img
-							src={e}
+							src={a}
 							alt="Fifth slide"
 						/>
 					</Carousel.Item>
 				</Carousel>
-			</center>
+			</div>
 		</div >
 	);
 };

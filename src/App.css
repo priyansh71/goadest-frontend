@@ -136,6 +136,7 @@ form > #author::placeholder {
 }
 .type > span{
   font-weight: 500;
+  text-align: start;
 }
 
 #create::placeholder{
@@ -311,8 +312,9 @@ center {
 
 .item > img {
   width: 70%;
+  display: block;
+  margin: auto;
 }
-
 
 .body3 {
   width: fit-content;
@@ -327,6 +329,7 @@ Link:hover {
 
 .Jumbotron {
   background-image: url(./images/info1.jpg);
+  margin-bottom: 2%;
 }
 #display{
   width: 70vw;
@@ -341,6 +344,7 @@ Link:hover {
 .Jumbotron1 {
   width: 100%;
   padding: 40px;
+  margin-bottom: 0;
 }
 
 .Jumbotron h1 {
@@ -373,6 +377,10 @@ Link:hover {
 .rule {
   width: 65vw;
   border: 1px thin rgb(141, 141, 141);
+}
+#footer{
+  margin: 0px;
+  padding:0px;
 }
 .container {
   margin: 0;
