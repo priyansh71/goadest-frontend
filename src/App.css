@@ -17,6 +17,18 @@
   font-family: "Satisfy";
   padding: 15px;
 }
+.footerlink{
+  font-size: 30px;
+  color: whitesmoke;
+
+}
+.footerlink:hover{
+  text-decoration: none;
+  font-size: 30px;
+  color: whitesmoke;
+
+
+}
 #navbar {
   border-bottom: 2px solid #b3b3b3;
   background-color: #e9ecef;
