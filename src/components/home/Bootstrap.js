@@ -1,4 +1,3 @@
-import a from "../../images/a.jpg";
 import b from "../../images/b.jpg";
 import c from "../../images/c.jpg";
 import d from "../../images/d.jpg";
@@ -20,7 +19,7 @@ const Bootstrap = () => {
 					water sports activities	along with the peace of the sunset beach	is enough to satisfy every adventure lover’s heart.
 				</p>
 			</Jumbotron>
-			<hr className="rule" />
+			{/* <hr className="rule" /> */}
 			<div>
 
 				<Carousel fade interval={3000} pauseOnHover={true} keyboard={true} className="carousel">
@@ -47,12 +46,6 @@ const Bootstrap = () => {
 						<img
 							src={d}
 							alt="Fourth slide"
-						/>
-					</Carousel.Item>
-					<Carousel.Item className="item">
-						<img
-							src={a}
-							alt="Fifth slide"
 						/>
 					</Carousel.Item>
 				</Carousel>

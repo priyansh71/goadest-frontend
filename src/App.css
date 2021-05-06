@@ -329,7 +329,8 @@ Link:hover {
 
 .Jumbotron {
   background-image: url(./images/info1.jpg);
-  margin-bottom: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #display{
   width: 70vw;
@@ -345,6 +346,8 @@ Link:hover {
   width: 100%;
   padding: 40px;
   margin-bottom: 0;
+  margin-top:0;
+  color: white;
 }
 
 .Jumbotron h1 {
@@ -376,7 +379,7 @@ Link:hover {
 }
 .rule {
   width: 65vw;
-  border: 1px thin rgb(141, 141, 141);
+  border: 1px thin rgb(95, 95, 95);
 }
 #footer{
   margin: 0px;

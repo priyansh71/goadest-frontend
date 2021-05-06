@@ -1,6 +1,4 @@
-import { Col, Container, Jumbotron, Nav } from 'react-bootstrap'
-import { Link, Redirect, Route, Switch } from 'react-router-dom'
-import Blog from './blog/Blog';
+import { Col, Container, Jumbotron } from 'react-bootstrap'
 
 const Footer = () => {
     const Redirect = () => {
@@ -15,8 +13,7 @@ const Footer = () => {
     }
     return (
         <div id="footer">
-            <hr className="rule" />
-            <br />
+            {/* <hr className="rule" /> */}
             <Jumbotron className="Jumbotron1">
                 <Container fluid>
                     <Col className="footerlink">
