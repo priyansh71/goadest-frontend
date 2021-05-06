@@ -9,30 +9,30 @@ function LocationData({ placename, address, description, typeofplace, image, lat
 
     return (
         <div className={Styles.cell}>
-            <br />
-            <br />
             <center className={Styles.textContainer}>
-                <h2>{placename}</h2>
+                <div id="placename">{placename}</div>
                 <hr />
-                <p>{description}</p>
-                <p>Type of location: {typeofplace}</p>
-                <p>Distance from campus: {distance} kms</p>
-                <p>Address: {address}</p>
-                <br />
-                <br />
-                <Container fluid>
-                    <Row>
-                        <img
-                            className={Styles.img}
-                            src={image}
-                        />
-                    </Row>
-
-                </Container>
-                <br />
-                <br />
                 <br />
                 <center>
+                    <Container fluid>
+                        <Row>
+                            <img
+                                className={Styles.img}
+                                src={image}
+                            />
+                        </Row>
+                    </Container>
+                </center>
+                <br />
+                <hr />
+                <p className="type">{description}</p>
+                <p className="type"><span>Type of Location:- </span>{typeofplace}</p>
+                <p className="type"><span>Distance from Campus:- </span>{distance} kilometers</p>
+                <p className="type"><span>Address:- </span>{address}</p>
+
+                <br />
+
+                <div>
                     <iframe
                         title={placename}
                         className={Styles.map}
@@ -40,16 +40,8 @@ function LocationData({ placename, address, description, typeofplace, image, lat
                         scrolling="yes"
                     >
                     </iframe>
-                    <br />
-                </center>
+                </div>
             </center>
-
-
-
-            <br />
-
-
-
         </div>
     )
 }
