@@ -1,3 +1,4 @@
+import { queryAllByDisplayValue } from '@testing-library/dom'
 import Styles from './Location.module.css'
 
 const RadiusFilter = ({ onChange, distance }) => {
@@ -8,7 +9,7 @@ const RadiusFilter = ({ onChange, distance }) => {
             <input className={Styles.textbox} type='text' value={distance} onChange={onChange} />
             <br />
             <input className={Styles.slider} type='range' min='5' max='100' value={distance} onChange={onChange} />
-        </center>
+        </center >
 
     )
 }

@@ -1,7 +1,8 @@
 import { Link, Route } from "react-router-dom";
-import { Button } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import BlogViewer from "./BlogViewer";
 import { useState } from "react";
+
 
 
 function BlogBox({ title, address, author }) {
@@ -18,12 +19,12 @@ function BlogBox({ title, address, author }) {
             <Button variant="light" id="Button" onClick={handleIndividualBlog} >
                 <Link className="bloglinkname1" to={'/blogs/readblogs/' + address}>
                     <span>{title}</span>
-                    <br />
                 </Link>
+                <br />
                 <Link className="bloglinkname2" to={'/blogs/readblogs/' + address}>
                     <span className="author">-: by {author}</span>
                 </Link>
-            </Button>
+            </Button >
 
 
 
@@ -32,7 +33,7 @@ function BlogBox({ title, address, author }) {
             </Route>
 
             <br />
-        </center>
+        </center >
 
     )
 }

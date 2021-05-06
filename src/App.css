@@ -8,6 +8,9 @@
 @import url("https://fonts.googleapis.com/css?family=Bellefair");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
+
 
 .brand {
   font-size: 4em;
@@ -73,18 +76,12 @@ form > #title::placeholder {
   font-family: 'Quicksand';
 
 }
-.footerlink{
+.footerlink > a{
   font-size: 3.5em;
-  color: rgb(0, 0, 0);
+  color: black;
   font-family: 'Satisfy';
   text-decoration: none;
 
-}
-.footerlink:hover{
-  font-size: 3.5em;
-  color: rgb(0, 0, 0);
-  font-family: 'Satisfy';
-  text-decoration: none;
 }
 
 .blogbuttons{
@@ -137,8 +134,11 @@ form > #author::placeholder {
   font-family: 'Quicksand';
 }
 .options{
-  max-width: 80%;
-  width: 80%;
+  max-width: 100%;
+  width: 100%;
+}
+.space{
+  margin-bottom: 20px;
 }
 
 center {
@@ -150,8 +150,10 @@ center {
 }
 #heading{
   font-family: 'Quicksand';
-  padding: 10px;
+  padding-left: 21%;
+  padding-bottom: 20px;
   font-size: 3em;
+  text-align:left;
 }
 .cover{
   margin: 20px;
@@ -205,13 +207,17 @@ center {
 
 .link:hover {
   text-decoration: none;
-  font-size: 1.6em;
+  font-size: 2em;
   font-family: "Kalam";
+  color:black;
+
 }
 .link {
   text-decoration: none;
-  font-size: 1.6em;
+  font-size: 2em;
   font-family: "Kalam";
+  color: #202020;
+  padding:0.55em;
 }
 
 .linkname {
@@ -248,7 +254,7 @@ center {
   padding: 20px;
   font-size: 2.5em;
   color: black;
-  font-family: 'Laila';
+  font-family: "Quicksand";
   text-align: center;
   overflow-wrap:break-word ;
   margin: 8px;
@@ -258,11 +264,12 @@ center {
   text-decoration: none;
   padding: 20px;
   font-size: 1.5em;
-  color: rgb(41, 41, 41);
-  font-family: 'Kalam';
+  color: rgb(15, 15, 15);
+  font-family: "Kalam";
   margin: 8px;
   text-align: right;
   overflow-wrap:break-word ;
+  font-weight: 200;
 }
 
 .bloglinkname1:hover {
@@ -270,7 +277,7 @@ center {
   padding: 20px;
   font-size: 2.5em;
   color: black;
-  font-family: 'Laila';
+  font-family: "Quicksand";
   text-align: center;
   overflow-wrap:break-word ;
   margin: 8px;
@@ -280,32 +287,20 @@ center {
   padding: 20px;
   font-size: 1.5em;
   color: rgb(41, 41, 41);
-  font-family: 'Kalam';
+  font-family: "Kalam";
   margin: 8px;
   text-align: right;
   overflow-wrap:break-word ;
 }
 .carousel {
   background-image: url(./images/fool.jpg);
-  width: 100%;
-}
-
-.item {
-  width:80%;
-  max-width: 80%;
-  height: 80%;
-  margin: unset;
-  float: unset;
-  padding-bottom: 15px;
-  padding-top: 20px;
+  height: 100%;
 }
 
 .item > img {
-  border-radius: 10px;
-  width: 80%;
-  height: 50%;
-  margin : auto;
+  width: 70%;
 }
+
 
 .body3 {
   width: fit-content;
@@ -338,17 +333,18 @@ Link:hover {
 
 .Jumbotron h1 {
   text-align: center;
-  padding: 30px;
-  font-size: 80px;
-  font-weight: 100;
-  font-family: "Dancing Script";
+  padding: 50px;
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+  font-family: "Poiret One";
+  font-weight: lighter;
 }
 
 .Jumbotron p {
   text-align: center;
-  font-size: 35px;
-  font-weight: 200;
-  font-family: "Bellefair";
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: "Old Standard TT";
   padding: 50px 50px 50px 50px;
   color: black;
   text-shadow: black;

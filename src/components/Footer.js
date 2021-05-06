@@ -14,8 +14,7 @@ const Footer = () => {
 
     }
     return (
-        <div onClick={Redirect} id="footer">
-            <br />
+        <div id="footer">
             <hr className="rule" />
             <br />
             <Jumbotron className="Jumbotron1">
@@ -23,13 +22,10 @@ const Footer = () => {
                     <Col className="footerlink">
                         <a href='/blogs/readblogs/605f1b37ca55900015029d2d'>
                             About the creators
-                        </a> 
+                        </a>
                     </Col>
                 </Container>
             </Jumbotron>
-            {/* <Switch>
-                <Route path='/blogs' component={Blog} />
-            </Switch> */}
         </div>
     )
 }

@@ -93,31 +93,27 @@ const Location = () => {
 					<Search value={searchValue} onChange={handleSearchChange} />
 				</div>
 				<hr className="rule" />
-				<div id="heading">
-					Filters
-				</div>
-
 			</center>
 
 			<Container fluid>
 				<Row>
-					<Col>
+					<Col id="heading">
+						Filters
+				    </Col>
+				</Row>
+				<Row>
+					<Col lg={3} sm={6} className="space">
 						<RadiusFilter onChange={handleChange_distance} distance={distance} />
 					</Col>
-					<Col>
+					<Col lg={2} sm={6} className="space" >
 						<OptionFilter onChange={handleChange_option} option={option} />
+					</Col>
+					<Col lg={7} sm={12}>
+						<MainSection locations={locations} />
 					</Col>
 				</Row>
 			</Container>
 			<br />
-			<hr className="rule" />
-			<Container fluid>
-				<Row>
-					<center >
-						<MainSection locations={locations} />
-					</center>
-				</Row>
-			</Container>
 		</div>
 
 	);
