@@ -1,25 +1,29 @@
-import { Col, Container, Jumbotron, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Col, Container, Jumbotron, Nav } from 'react-bootstrap'
+import { Link, Redirect, Route, Switch } from 'react-router-dom'
+import Blog from './blog/Blog';
 
 const Footer = () => {
+    const Redirect = () => {
+        return (
+            <Redirect
+                to={{
+                    pathname: "/blogs"
+                }}
+            />
+        )
+
+    }
     return (
-        <div>
-            <br />
+        <div id="footer">
             <hr className="rule" />
             <br />
             <Jumbotron className="Jumbotron1">
                 <Container fluid>
-                    <Row>
-                        <Col>
-                            <Link className="footerlink" to='/about'>About</Link>
-                        </Col>
-                        <Col>
-                            <Link className="footerlink" to='/Contact-Us'>Contact Us</Link>
-                        </Col>
-                        <Col>
-                            <Link className="footerlink" to='Help-and-Support'>Help and Support</Link>
-                        </Col>
-                    </Row>
+                    <Col className="footerlink">
+                        <a href='/blogs/readblogs/605f1b37ca55900015029d2d'>
+                            About the creators
+                        </a>
+                    </Col>
                 </Container>
             </Jumbotron>
         </div>

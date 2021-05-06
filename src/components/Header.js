@@ -7,22 +7,19 @@ import Blog from './blog/Blog'
 const Header = () => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" expand="lg" id="navbar">
+      <Navbar variant="light" expand="lg" id="navbar">
         <Link to="/">
           <Navbar.Brand className="brand">GoaDest</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="ml-auto">
             <Link className="link" to="/blogs">
               <Nav.Link as={Link} to='/blogs'>Community</Nav.Link>
             </Link>
-            <Nav.Item>
-              <Link className="link" to="/locations">
-                <Nav.Link as={Link} to='/locations'>Locations</Nav.Link>
-              </Link>
-            </Nav.Item>
-
+            <Link className="link" to="/locations">
+              <Nav.Link as={Link} to='/locations'>Locations</Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -35,7 +35,7 @@ const Blog = () => {
                     <center>
                         <Button variant="dark">
                             <Link className="linkname" to="/blogs/createblog">
-                                <span>Create a Blog </span>
+                                <span>Create a Blog</span>
                             </Link>
                         </Button>
                     </center>
@@ -49,7 +49,7 @@ const Blog = () => {
                         })}
                 </div>
             </Router>
-        </div>
+        </div >
     );
 };
 
