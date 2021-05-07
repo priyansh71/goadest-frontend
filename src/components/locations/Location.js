@@ -87,7 +87,7 @@ const Location = () => {
 	];
 
 	return (
-		<div id={Styles.maindiv}>
+		<>
 
 			<center>
 				<hr className="rule" />
@@ -103,19 +103,17 @@ const Location = () => {
 				    </Col>
 				</Row>
 				<Row>
-					<Col lg={3} sm={6} className="space">
-						<RadiusFilter onChange={handleChange_distance} distance={distance} />
+					<Col md={4} sm={12} >
+						<RadiusFilter onChange={handleChange_distance} distance={distance} className="space" />
+						<OptionFilter onChange={handleChange_option} option={option} className="space" />
 					</Col>
-					<Col lg={2} sm={6} className="space" >
-						<OptionFilter onChange={handleChange_option} option={option} />
-					</Col>
-					<Col lg={7} sm={12}>
+					<Col md={8} sm={12}>
 						<MainSection locations={locations} />
 					</Col>
 				</Row>
 			</Container>
 			<br />
-		</div>
+		</>
 
 	);
 };

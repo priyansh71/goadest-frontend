@@ -65,11 +65,11 @@ label {
     display: flex;
     flex-direction: row;
     padding: 1em;
-    width: 85%;
+    width: 95%;
     border: thin solid black;
     border-radius: 20px 80px 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1em;
+    margin-right: 0;
     margin-bottom: 2em;
 }
 
@@ -81,8 +81,3 @@ label {
     height: 50px;
     width: 50px;
 }
-#maindiv{
-    width: 100%;
-    max-width: 100%;
-}
-

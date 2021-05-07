@@ -11,7 +11,7 @@ const Bootstrap = () => {
 	return (
 		<div className="mydiv">
 			<Jumbotron className="Jumbotron">
-				<h1>Your dream holiday destination.</h1>
+				<div className="head">Your dream holiday destination.</div>
 				<p>
 					Famed to be paradise on earth, Goa has the right mix of everything that a tourist
 					destination has to offer. It's beautiful because of its unbeatable greenery oozing out of the dense palm cover even at the most popular
