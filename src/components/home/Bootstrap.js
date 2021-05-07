@@ -18,38 +18,39 @@ const Bootstrap = () => {
 					stretches of beaches, while the glimpse of peaceful life of the fisherman villages, the exciting
 					water sports activities	along with the peace of the sunset beach	is enough to satisfy every adventure lover’s heart.
 				</p>
-			</Jumbotron>
-			{/* <hr className="rule" /> */}
-			<div>
+				{/* <hr className="rule" /> */}
+				<div>
 
-				<Carousel fade interval={3000} pauseOnHover={true} keyboard={true} className="carousel">
-					<Carousel.Item className="item">
-						<img
-							d-inline
-							src={e}
-							alt="First slide"
-						/>
-					</Carousel.Item>
-					<Carousel.Item className="item">
-						<img
-							src={b}
-							alt="Second slide"
-						/>
-					</Carousel.Item>
-					<Carousel.Item className="item">
-						<img
-							src={c}
-							alt="Third slide"
-						/>
-					</Carousel.Item>
-					<Carousel.Item className="item">
-						<img
-							src={d}
-							alt="Fourth slide"
-						/>
-					</Carousel.Item>
-				</Carousel>
-			</div>
+					<Carousel fade interval={3000} pauseOnHover={true} keyboard={true} className="carousel">
+						<Carousel.Item className="item">
+							<img
+								d-inline
+								src={e}
+								alt="First slide"
+							/>
+						</Carousel.Item>
+						<Carousel.Item className="item">
+							<img
+								src={b}
+								alt="Second slide"
+							/>
+						</Carousel.Item>
+						<Carousel.Item className="item">
+							<img
+								src={c}
+								alt="Third slide"
+							/>
+						</Carousel.Item>
+						<Carousel.Item className="item">
+							<img
+								src={d}
+								alt="Fourth slide"
+							/>
+						</Carousel.Item>
+					</Carousel>
+				</div>
+			</Jumbotron>
+
 		</div >
 	);
 };

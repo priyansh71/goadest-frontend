@@ -33,7 +33,7 @@ function BlogBox({ title, address, author }) {
             </Route>
 
             <br />
-        </center >
+        </center>
 
     )
 }
