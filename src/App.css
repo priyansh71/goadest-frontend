@@ -126,6 +126,8 @@ form > #author::placeholder {
 #placename{
   font-size: 3.5em;
   font-family: 'Bellefair';
+  width: 80%;
+  max-width: 90%;
 }
 
 .type{
