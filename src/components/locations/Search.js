@@ -3,6 +3,7 @@ import { useState } from "react";
 import { config } from "../../config";
 import styles from "./Location.module.css";
 import LocationData from "./LocationData";
+import { Button } from "react-bootstrap"
 
 const Search = ({ value, onChange }) => {
 	const [location, setLocation] = useState("");
@@ -32,7 +33,8 @@ const Search = ({ value, onChange }) => {
 		<div>
 			<form onSubmit={handleSubmit}>
 				<input className={styles.search} type="text" value={value} onChange={onChange} placeholder="Search here" />
-				<input id="button" type="submit" value="Submit" />
+				<br />
+					<Button variant="light" type="submit" id="button">Submit</Button>
 			</form>
 			{location && (
 				<LocationData
