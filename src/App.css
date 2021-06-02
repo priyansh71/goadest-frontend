@@ -1,38 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Satisfy");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
-@import url("https://fonts.googleapis.com/css?family=Courgette");
 @import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
 @import url("https://fonts.googleapis.com/css?family=Kalam");
 @import url("https://fonts.googleapis.com/css?family=Laila");
-@import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Bellefair");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
-@import url("https://fonts.googleapis.com/css?family=Dosis");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
-@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
-
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=Fanwood+Text");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap");
 
 .brand {
   font-size: 3.4em;
   font-family: "Satisfy";
   padding: 2%;
 }
-.footerlink{
+.footerlink {
   font-size: 15px;
   color: whitesmoke;
-
 }
-.footerlink:hover{
+.footerlink:hover {
   text-decoration: none;
   font-size: 15px;
   color: whitesmoke;
-
-
 }
 #navbar {
   background-color: #e9ecef;
 }
-.ruler{
+.ruler {
   width: 75vw;
   border: 2px thin #181e20;
 }
@@ -59,17 +54,17 @@ form > #title {
   padding: 20px;
   margin: 10px;
   width: 70%;
-  overflow-wrap:break-word ;
+  overflow-wrap: break-word;
   border: 1px solid black;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
 }
 form > #author {
   padding: 10px;
   margin: 20px;
   width: 40%;
-  overflow-wrap:break-word ;
+  overflow-wrap: break-word;
   border: 1px solid black;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
 }
 form > #post {
   padding: 10px;
@@ -84,18 +79,16 @@ form > #title::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
-  font-family: 'Quicksand';
-
+  font-family: "Quicksand";
 }
-.footerlink > a{
+.footerlink > a {
   font-size: 3.5em;
   color: black;
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   text-decoration: none;
-
 }
 
-.blogbuttons{
+.blogbuttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -106,55 +99,52 @@ form > #author::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
-  font-family: 'Quicksand';
-
+  font-family: "Quicksand";
 }
 
-#blogbox{
+#blogbox {
   text-align: center;
   max-width: 80%;
 }
 
-#create{
+#create {
   width: 70vw;
   height: 70vh;
   padding: 10px;
-  border:1.5px solid black;
-  font-family: 'Quicksand';
-
+  border: 1.5px solid black;
+  font-family: "Quicksand";
 }
-#placename{
+#placename {
   font-size: 3.5em;
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   width: 80%;
   max-width: 90%;
 }
 
-.type{
+.type {
   font-size: 1.5em;
   padding: 5px;
-
 }
-.type > span{
+.type > span {
   font-weight: 500;
   text-align: start;
 }
 
-#create::placeholder{
+#create::placeholder {
   text-align: center;
   padding-left: auto;
   padding-right: auto;
   padding-top: 10px;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
 }
-.options{
+.options {
   max-width: 100%;
   width: 100%;
 }
-@media (min-width: 768px){
-  .space{
+@media (min-width: 768px) {
+  .space {
     position: -webkit-sticky !important;
-    position: sticky; 
+    position: sticky;
     top: 0 !important;
   }
 }
@@ -166,18 +156,17 @@ center {
 .App {
   text-align: center;
 }
-#heading{
-  font-family: 'Quicksand';
+#heading {
+  font-family: "Quicksand";
   padding-left: 10%;
   padding-bottom: 20px;
   font-size: 3em;
-  text-align:left;
+  text-align: left;
 }
-.cover{
+.cover {
   margin: 20px;
   border: 2px solid black;
   padding: 20px;
-
 }
 .App-header {
   background-color: #282c34;
@@ -200,7 +189,7 @@ center {
   align-items: center;
 }
 
-#content{
+#content {
   width: 75%;
   max-width: 80%;
   font-size: 25px;
@@ -208,38 +197,39 @@ center {
   padding: 1%;
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left:0 ;
+  margin-left: 0;
   margin-right: 0;
-  overflow-wrap:break-word ;
+  overflow-wrap: break-word;
   white-space: pre-line;
   text-align: left;
-  
+  font-family: "Hind Madurai";
 }
 #head {
   font-size: 40px;
   font-weight: 500;
-  font-family: 'Laila' ;
+  font-family: "Laila";
 }
-#head2{
+#head2 {
   font-size: 20px;
   font-weight: 300;
-  font-family: 'Laila' ;
-
+  font-family: "Laila";
 }
 
 .link:hover {
   text-decoration: none;
   font-size: 2em;
-  font-family: "Kalam";
-  color:black;
-
+  font-family: "IM Fell Double Pica", serif;
+  color: black;
+  font-weight: bold;
+  transform: scale(1.059);
+  transition: 0.12s linear;
 }
 .link {
   text-decoration: none;
   font-size: 2em;
-  font-family: "Kalam";
+  font-family: "IM Fell Double Pica", serif;
   color: #202020;
-  padding:0.55em;
+  padding: 0.55em;
 }
 
 .linkname {
@@ -248,7 +238,6 @@ center {
   font-size: 3.5em;
   font-family: "Dancing Script";
   color: white;
-
 }
 .linkname:hover {
   text-decoration: none;
@@ -256,6 +245,21 @@ center {
   font-size: 3.5rem;
   font-family: "Dancing Script";
   color: white;
+}
+#button {
+  font-family: "Quicksand";
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(116, 116, 116);
+  font-size: 0.7em;
+  color: black;
+  transition: 1s ease-in;
+  border-radius: 5%;
+}
+#button:hover {
+  transform: scale(1.05);
+  transition: 1s ease-out;
 }
 
 #Button {
@@ -276,11 +280,10 @@ center {
   padding: 20px;
   font-size: 2.5em;
   color: black;
-  font-family: "Quicksand";
+  font-family: "Nixie One";
   text-align: center;
-  overflow-wrap:break-word ;
+  overflow-wrap: break-word;
   margin: 8px;
-
 }
 .bloglinkname2 {
   text-decoration: none;
@@ -290,7 +293,7 @@ center {
   font-family: "Kalam";
   margin: 8px;
   text-align: right;
-  overflow-wrap:break-word ;
+  overflow-wrap: break-word;
   font-weight: 200;
 }
 
@@ -299,9 +302,10 @@ center {
   padding: 20px;
   font-size: 2.5em;
   color: black;
-  font-family: "Quicksand";
+  font-weight: bold;
+  font-family: "Nixie One";
   text-align: center;
-  overflow-wrap:break-word ;
+  overflow-wrap: break-word;
   margin: 8px;
 }
 .bloglinkname2:hover {
@@ -312,7 +316,7 @@ center {
   font-family: "Kalam";
   margin: 8px;
   text-align: right;
-  overflow-wrap:break-word ;
+  overflow-wrap: break-word;
 }
 .carousel {
   height: 100%;
@@ -340,21 +344,20 @@ Link:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
-#display{
+#display {
   width: 70vw;
   height: 70vh;
   padding: 20px;
   font-size: 20px;
   border: 0.5px solid rgb(236, 236, 236);
-  font-family: 'Quicksand';
-
+  font-family: "Quicksand";
 }
 
 .Jumbotron1 {
   width: 100%;
   padding: 40px;
   margin-bottom: 0;
-  margin-top:0;
+  margin-top: 0;
   color: white;
 }
 
@@ -366,17 +369,17 @@ Link:hover {
   color: rgb(0, 0, 0);
   font-family: "Poiret One";
   font-weight: lighter;
-  overflow-wrap:inherit;
+  overflow-wrap: inherit;
 }
 
 .Jumbotron p {
   text-align: center;
   font-size: 1.8em;
-  font-weight: lighter;
-  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-family: "Fanwood Text";
   padding: 1.8em;
   color: black;
-  text-shadow: black;
+  font-style: italic;
 }
 
 .Jumbotron1 p {
@@ -391,9 +394,9 @@ Link:hover {
   width: 65vw;
   border: 1px thin rgb(95, 95, 95);
 }
-#footer{
+#footer {
   margin: 0px;
-  padding:0px;
+  padding: 0px;
 }
 .container {
   margin: 0;
