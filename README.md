@@ -1,3 +1,5 @@
+<h2>This React app has been hosted at <strong> <a href="https://pedantic-hoover-780e27.netlify.app/"> Goadest. </a></strong></h3><br><br>
+
 ![Screenshot (89)](https://user-images.githubusercontent.com/77532581/117511796-fa631d00-afab-11eb-8cf8-da62825b96c3.png)
 
 <h1>GoaDest is here!</h1>
