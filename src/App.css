@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
 @import url("https://fonts.googleapis.com/css?family=Nixie+One");
 @import url("https://fonts.googleapis.com/css?family=Fanwood+Text");
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica");
 
 .brand {
   font-size: 3.4em;
@@ -217,17 +217,19 @@ center {
 
 .link:hover {
   text-decoration: none;
+  margin-left: 5px;
   font-size: 2em;
-  font-family: "IM Fell Double Pica", serif;
+  font-family: "IM Fell Double Pica";
   color: black;
   font-weight: bold;
   transform: scale(1.059);
   transition: 0.12s linear;
 }
 .link {
+  margin-left: 0;
   text-decoration: none;
   font-size: 2em;
-  font-family: "IM Fell Double Pica", serif;
+  font-family: "IM Fell Double Pica";
   color: #202020;
   padding: 0.55em;
 }
@@ -248,8 +250,8 @@ center {
 }
 #button {
   font-family: "Quicksand";
-  margin: 10px;
-  padding: 10px;
+  margin: 13px;
+  padding: 8px 10px;
   background-color: transparent;
   border: 1px solid rgb(116, 116, 116);
   font-size: 0.7em;
