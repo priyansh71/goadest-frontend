@@ -1,5 +1,5 @@
 import { Link, Route } from "react-router-dom";
-import { Button, Card } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import BlogViewer from "./BlogViewer";
 import { useState } from "react";
 
@@ -24,7 +24,7 @@ function BlogBox({ title, address, author }) {
                 <Link className="bloglinkname2" to={'/blogs/readblogs/' + address}>
                     <span className="author">-: by {author}</span>
                 </Link>
-            </Button >
+            </Button>
 
 
 

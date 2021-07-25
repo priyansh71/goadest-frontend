@@ -56,7 +56,7 @@ const BlogCreator = () => {
 
                     <br />
 
-                    <input id="post" type="submit" value="POST" />
+                    <input id="post" type="submit" value="Post" />
                     <br />
                     <br />
                     <textarea
